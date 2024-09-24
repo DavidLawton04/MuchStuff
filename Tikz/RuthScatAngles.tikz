@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (19) at (2.5, 2.5) {};
+		\node [style=none] (20) at (2.5, -2.5) {};
+		\node [style=none] (6) at (0, 0) {};
+		\node [style=none] (0) at (0, 0) {};
+		\node [style=none] (1) at (8, 8) {};
+		\node [style=none] (2) at (8, -8) {};
+		\node [style=none] (4) at (2, 0) {};
+		\node [style=new style 2] (5) at (-2, 0) {};
+		\node [style=none] (14) at (1.75, 3.75) {$r$};
+		\node [style=none] (16) at (-3.75, 0.75) {Au Nucleus};
+		\node [style=none] (17) at (1.5, -1.5) {};
+		\node [style=none] (18) at (0, -1.25) {$\theta_{min}$};
+		\node [style=none] (21) at (4.5, 1) {$\theta_{max}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=new edge style 1] (19.center)
+			 to (6.center)
+			 to (20.center)
+			 to [bend right=45] cycle;
+		\draw [bend left=45, looseness=1.75] (2.center) to (1.center);
+		\draw [style=new edge style 0] (6.center) to (1.center);
+		\draw [style=new edge style 0] (0.center) to (2.center);
+		\draw [style=new edge style 2] (5) to (1.center);
+		\draw [style=new edge style 2] (6.center)
+			 to (4.center)
+			 to [bend left=45, looseness=0.50] (17.center)
+			 to cycle;
+		\draw [style=new edge style 2] (17.center) to (6.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
