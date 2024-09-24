@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{xfrac}
+\usepackage{amsmath, amssymb}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{mathalpha}
+\usepackage{tikz}
+\usepackage{cite}
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{example}{Example}
+\newtheorem*{notation}{Notation}
+
+\title{Classical Field Theory}
+\author{Based on the lectures of Andrei Parnachev\\David Lawton}
+\date{12th Sep. 2024.}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Lecture: 1}
+\begin{definition}
+    \textbf{Gauss' Law}: for any vector field $\vec{E}$,\\ 
+    \begin{equation}
+    \oint \vec{E}\cdot \mathrm{d}\vec{S}=\iiint_V \nabla\cdot\vec{E}\mathrm{d}V
+    \end{equation}
+\end{definition}
+\begin{definition}   
+    \textbf{Dirac Delta Function} $\delta(x)$
+    \begin{equation}
+        \delta(x) = 
+        \begin{cases}
+            0 & \text{ , }x\neq 0\\
+            1 & \text{ , }x=\infty
+        \end{cases}
+    \end{equation}
+    \begin{equation}
+        \int_{-\infty}^{\infty} f(x)\delta(x)\mathrm{d}x=f(0)
+    \end{equation}
+\end{definition} 
+\subsection[short]{Point-like Electric Charges}
+Consider charged point particle with charge $q_i$ at position $\vec{x_i}$. This particle generates a field $\vec{E}$,
+\begin{equation}
+    \vec{E} = \frac{q_i}{4\pi\epsilon_0}\frac{\vec{x}-\vec{x_i}}{|\vec{x}-\vec{x_i}|^3}
+\end{equation}
+The force acting on another charge $q_j$ at $\vec{x}$ is $\vec{F}=q_j\vec{E}$.\\
+The electric field is \textbf{linear}
+\begin{equation}
+    \vec{E} = \sum_{i}\vec{E_i}
+\end{equation}
+Suppose continuous distribution of charge density $\rho(x)$. We can imagine a many infinitessimal volume elements $\mathrm{d}V$ at position $\vec{x_i}$ with charge $\mathrm{d}q_i\approx\rho(\vec{x_i})\mathrm{d}V$.
+\begin{equation}
+    \vec{E} = \frac{1}{4\pi\epsilon_0}\sum_{i}\frac{\vec{x}-\vec{x_i}}{|\vec{x}-\vec{x_i}|^3}\mathrm{d}q_i
+\end{equation}
+We then take the limit as $\mathrm{d}V$ becomes infinitessimal, turning the sum into an integral
+\begin{equation}
+    \vec{E} = \frac{1}{4\pi\epsilon_0}\int\frac{\vec{x}-\vec{x'}}{|\vec{x}-\vec{x'}|^3}\rho(\vec{x'})\mathrm{d}^3x'
+\end{equation}
+Next we will show that the divergence of the electric field of a point charge is zero $\forall \vec{x}\neq\vec{x_i}$. First w.l.o.g. we let $\vec{x_i}=0$. Then
+\begin{equation*}
+    \vec{E} = \frac{q_i}{4\pi\epsilon_0}\frac{\vec{x}}{|\vec{x}|^3}
+\end{equation*}
+\begin{align*}
+    \nabla\cdot \vec{E} &= \partial_iE_i\\
+                        &= \frac{q_i}{4\pi\epsilon_0}\left(\frac{\partial}{\partial x}\left[\frac{x}{\sqrt{x^2+y^2+z^2}^3}\right]+ x \leftrightarrow y + x \leftrightarrow z\right)\\
+                        &= \frac{q_i}{4\pi\epsilon_0}\left(\left[\frac{1}{\sqrt{x^2+y^2+z^2}^3} - 3\frac{x^2}{\sqrt{x^2+y^2+z^2}^5}\right] + x \leftrightarrow y + x \leftrightarrow z\right)\\
+                        &= \frac{q_i}{4\pi\epsilon_0}\left(\frac{3}{|\vec{x}^3|} - 3\frac{x^2+y^2+z^2}{(x^2+y^2+z^2)^5}\right)\\
+                        &= 0 ~~\forall \vec{x}\neq 0 \text{ Undefined for }\vec{x}=0
+\end{align*}
+Now construct some surface $\mathfrak{S}$ with some charge q_i not contained within it. Then,
+\begin{align*}
+    \oint_{\mathfrak{S}}\vec{E}\cdot\mathrm{d}\vec{S} &= \lim_{i\to\infty}\sum_{i}\vec{E}_i\mathrm{d}\vec{S}_i\\
+                                                      &=\int \mathrm{d}V \nabla\cdot\vec{E}
+\end{align*}
+
+
+
+\end{document}
