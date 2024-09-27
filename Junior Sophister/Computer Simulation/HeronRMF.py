@@ -171,36 +171,36 @@ class difference_methods:
     def __init__(self):
         self.times = np.array([0.1, 1, 100])
         self.h = 0.01
-        self.iterations = 16
+        self.iterations = 160
 
     def difference_methods_cos(self):
         fwd = (np.cos(self.times + self.h) - np.cos(self.times))/self.h
-        bwd = (np.cos(self.times) - np.cos(self.times - self.h))/self.h 
+        central = (np.cos(self.times + self.h) - np.cos(self.times - self.h))/(2*self.h)
 
-        return fwd, bwd
+        return fwd, central
     
     def difference_method_exp(self):
         fwd = (np.exp(self.times + self.h) - np.exp(self.times))/self.h
-        bwd = (np.exp(self.times) - np.exp(self.times - self.h))/self.h
-        return fwd, bwd,
+        central = (np.exp(self.times + self.h) - np.exp(self.times - self.h))/(2*self.h)
+        return fwd, central,
     
     def analysis_cos(self):
         length = len(self.times)
         hvals = []
         fwdiff = np.empty((length, self.iterations), float)
-        bwdiff = np.empty((length, self.iterations), float)
+        ctdiff = np.empty((length, self.iterations), float)
         for j in range(self.iterations):
             
             self.h = self.h/2
             
-            fwd, bwd = self.difference_methods_cos()
+            fwd, central = self.difference_methods_cos()
             hvals.append(self.h)
             # print(len(hvals))
 
 
             for i in range(length):
                 fwdiff[i, j] = fwd[i]
-                bwdiff[i, j] = bwd[i]
+                ctdiff[i, j] = central[i]
                 # print(fwdiff)
                 # print(bwdiff)
             # print(fwdiff.shape)
@@ -208,29 +208,32 @@ class difference_methods:
         fig, axs = plt.subplots(2, 3)
         fig.set_figwidth(18)
         fig.set_figheight(10)
-        fig.suptitle("Forward and Backward Difference Methods for $f(x) = \\cos(x)$")
+        fig.suptitle("Forward and Central Difference Methods for $f(x) = \\cos(x)$")
         
         for i in range(length):
             axs[0, i].set_title(f"$t = {self.times[i]}$")
-            axs[0, i].plot(hvals, bwdiff[i, 0:], label="Backward Difference")
+            axs[0, i].plot(hvals, ctdiff[i, 0:], label="Central Difference")
             axs[0, i].plot(hvals, fwdiff[i, 0:], label="Forward Difference")
             axs[0, i].set_xlabel("$h$")
+            axs[0, i].set_xscale("log")
             axs[0, i].set_ylabel(f"Derivative at ${self.times[i]}$ of $\\cos(x)$")
             axs[0, i].legend()
 
         for i in range(length):
             axs[1, i].set_title(f"Error at $t = {self.times[i]}$")
-            axs[1, i].plot(hvals, bwdiff[i, 0:] - np.sin(self.times[i]), label="Backward Difference")
-            axs[1, i].plot(hvals, fwdiff[i, 0:] - np.sin(self.times[i]), label="Forward Difference")
+            axs[1, i].plot(hvals, ctdiff[i, 0:] - np.sin(self.times[i]), "oy", label="Central Difference")
+            axs[1, i].plot(hvals, fwdiff[i, 0:] - np.sin(self.times[i]), "oy", label="Forward Difference")
             axs[1, i].set_xlabel("$h$")
+            axs[1, i].set_xscale("log")
             axs[1, i].set_ylabel(f"Error at ${self.times[i]}$ of $\\cos(x)$")
             axs[1, i].legend()
 
         plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/DifferenceMethods.pdf")
-        for i in range(10):
-            print(f"For the forward difference method, with step size {hvals[i]}, the derivative of $\\cos(x)$ at $t = {self.times[i]}$ is ${fwdiff[0, -1]}$.")
-            print(f"For the backward difference method, with step size {hvals[i]}, the derivative of $\\cos(x)$ at $t = {self.times[i]}$ is ${bwdiff[0, -1]}$.")
-            
+
+        for j in range(length):
+            print(f"For the forward difference method, with step size {hvals[10]}, the derivative of $\\cos(x)$ at $t = {self.times[j]}$ is ${fwdiff[j, 10]}$,\n and the error is {np.abs(fwdiff[j, 10] - np.sin(self.times[j]))}.")
+            print(f"For the Central difference method, with step size {hvals[10]}, the derivative of $\\cos(x)$ at $t = {self.times[j]}$ is ${ctdiff[j, 10]}$, \n and the error is {np.abs(ctdiff[j, 10] - np.sin(self.times[j]))}.")
+
     
 
 
