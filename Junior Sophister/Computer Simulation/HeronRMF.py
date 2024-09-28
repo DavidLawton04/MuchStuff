@@ -1,8 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
+
+# Below, each class corresponds to a different part of the assignment.
+# Feel free to change the values of the class variables to test the code. 
+# The code of each can be run by uncommenting the calling of the relevant modules in each instance.
+
+
 class heronsRootMethod:
 
+    # Define class variables.
     def __init__(self):
         self.c_ = 2
         self.iterations = 5
@@ -23,16 +30,14 @@ class heronsRootMethod:
 
     # Define function to record iterations of Heron's Method.
     def sqrroot(self):
-        x_n_vals = [[],[]]
         x = []
-        for i in range(self.length):
-            x.append([self.inp[i]])
         y = []
         for j in range(self.length):
+            x.append([self.inp[j]])
             y.append([0])
             for i in range(self.iterations):
                 x[j].append(self.HeronRFM(x[j][-1], self.c_))
-                y[j].append(i)
+                y[j].append(i+1)
         return x, y
 
 
@@ -40,60 +45,43 @@ class heronsRootMethod:
     # a range of initial guesses, and plots of the results.
     def analysis(self):
 
-        # 'calc_length' stores the no. of iterations required for each guess to converge.
-        calc_length = [[],[]]
         vals, its = self.sqrroot()
-        for j in range(self.length):
-            for i in range(self.iterations):
-                if vals[j][i] == vals[j][-1]:
-                    calc_length[0].append(self.inp[j]-np.sqrt(self.c_))
-                    calc_length[1].append(i)
-                    break
+        print(vals, its)
 
         # Creating plot of results.
         fig, axs = plt.subplots(1,3)
-        fig.set_figwidth(15)
+        fig.set_figwidth(17)
         fig.set_figheight(5)
-        fig.suptitle(f"Heron's Method, $a$ = ${self.c_}$, Iterations $= {self.iterations}$, range: $\\sqrt{{{self.c_}}}$ to {self.inp[-1]}")
+        fig.suptitle(f"Heron's Method, $a$ = ${self.c_}$, Iterations $= {self.iterations}$, Starting guesses: ${self.inp}$")
 
         # Define colors for each initial guess, to allow better analysis of paths.
-        # Better choices of color maps improve visibility of paths, convergence.
-        colors = plt.cm.inferno_r(np.linspace(0, 1, self.length))
-
+        # Better choices of color maps improve visibility of paths, convergence
+        colors = plt.cm.nipy_spectral(np.linspace(0, 1, self.length))
         # First subplot: Iterations of x_n.
         axs[0].set_title(f"Iterations of $x_n$")
         for i in range(self.length):
-            axs[0].plot(its[i], vals[i], color=colors[i])
+            axs[0].plot(its[i], vals[i], color=colors[i], marker='o', markersize=5, linestyle='-', linewidth=1, drawstyle='steps-mid')
         axs[0].set_xlabel("Iterations")
-        # axs[0].set_yscale("log")
+        axs[0].axhline(y=np.sqrt(self.c_), color="red", linestyle="--")
+        # axs[0].text(0, self.c_ - 0.1, f"{self.c_}", color="red", ha="right", va="center")
         axs[0].set_ylabel("$x_n$")
 
         # Second subplot: Relative Error of x_n.
         axs[1].set_title(f"Relative Error of $x_n$")
         for i in range(self.length):
-            axs[1].plot(its[i], (np.abs(self.c_ - (np.array(vals[i])**2)))/self.c_, color=colors[i])
+            axs[1].plot(its[i], (np.abs(self.c_ - (np.array(vals[i])**2)))/self.c_, color=colors[i], marker='o', markersize=5, linestyle='-', linewidth=1, drawstyle='steps-mid')
         axs[1].set_xlabel("Iterations")
-        # axs[1].set_yscale("log")
+        axs[1].set_yscale("log")
         axs[1].set_ylabel("Relative Error")
+
+        axs[2].set_title("Convergence of square to input value")
+        for i in range(self.length):
+            axs[2].plot(its[i], (np.array(vals[i])**2), color=colors[i], marker='o', markersize=5, linestyle='-', linewidth=1, drawstyle='steps-mid')
+        axs[2].set_xlabel("Iterations")
+        axs[2].set_ylabel("$(x_n)^2$")
+        axs[2].axhline(y=self.c_, color="red", linestyle="--")
+        axs[2].text(0, self.c_ - 0.1, f"{self.c_}", color="red", ha="right", va="center")
         
-        # Idea of fitting function for convergence rate, unsuccesful, likely power law.
-
-        # calc_length[0].insert(2, 0)
-        # calc_length[1].insert(2, 0)
-        # params, pcov = curve_fit(fitfunc, calc_length[0], calc_length[1], method = "lm", absolute_sigma=True, maxfev = 100000)
-        # print("params:", params)
-        # stdev =np.sqrt(np.diag(pcov))
-        # print(stdev)
-
-        # Previously had plot investigationg convergence rate of Heron's Method.
-        # Third subplot: Convergence Rate.
-        # axs[2].set_title(f"Convergence Rate")
-        # #axs[2].plot(calc_length[0], fitfunc(np.array(calc_length[0]), *params), "r")
-        # axs[2].plot(calc_length[0], calc_length[1], "-b")
-        # axs[2].scatter(calc_length[0], calc_length[1], color="y")
-        # axs[2].set_xlabel("$x_0 - \\sqrt{{{a}}}$")
-        # axs[2].set_ylabel("Iterations to Convergence")
-
 
         plt.savefig(f"/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/HeronRMF{self.c_}.pdf")
         plt.close()
@@ -171,7 +159,8 @@ class difference_methods:
     def __init__(self):
         self.times = np.array([0.1, 1, 100])
         self.h = 0.01
-        self.iterations = 160
+        self.iterations = 35
+        self.initial_h = self.h
 
     def difference_methods_cos(self):
         fwd = (np.cos(self.times + self.h) - np.cos(self.times))/self.h
@@ -185,10 +174,13 @@ class difference_methods:
         return fwd, central,
     
     def analysis_cos(self):
+
         length = len(self.times)
         hvals = []
         fwdiff = np.empty((length, self.iterations), float)
         ctdiff = np.empty((length, self.iterations), float)
+        colordict = {"central": "blue", "fwd": "red"}
+        self.h = self.initial_h
         for j in range(self.iterations):
             
             self.h = self.h/2
@@ -196,7 +188,6 @@ class difference_methods:
             fwd, central = self.difference_methods_cos()
             hvals.append(self.h)
             # print(len(hvals))
-
 
             for i in range(length):
                 fwdiff[i, j] = fwd[i]
@@ -221,18 +212,67 @@ class difference_methods:
 
         for i in range(length):
             axs[1, i].set_title(f"Error at $t = {self.times[i]}$")
-            axs[1, i].plot(hvals, ctdiff[i, 0:] - np.sin(self.times[i]), "oy", label="Central Difference")
-            axs[1, i].plot(hvals, fwdiff[i, 0:] - np.sin(self.times[i]), "oy", label="Forward Difference")
+            axs[1, i].plot(hvals, np.abs(ctdiff[i, 0:] + np.sin(self.times[i])), marker="o", markersize=5, color=colordict["central"], label="Central Difference")
+            axs[1, i].plot(hvals, np.abs(fwdiff[i, 0:] + np.sin(self.times[i])), marker="o", markersize=5, color=colordict["fwd"], label="Forward Difference")
             axs[1, i].set_xlabel("$h$")
             axs[1, i].set_xscale("log")
             axs[1, i].set_ylabel(f"Error at ${self.times[i]}$ of $\\cos(x)$")
+            axs[1, i].set_yscale("log")
             axs[1, i].legend()
 
-        plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/DifferenceMethods.pdf")
+        plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/DifferenceMethodsCos.pdf")
 
         for j in range(length):
-            print(f"For the forward difference method, with step size {hvals[10]}, the derivative of $\\cos(x)$ at $t = {self.times[j]}$ is ${fwdiff[j, 10]}$,\n and the error is {np.abs(fwdiff[j, 10] - np.sin(self.times[j]))}.")
-            print(f"For the Central difference method, with step size {hvals[10]}, the derivative of $\\cos(x)$ at $t = {self.times[j]}$ is ${ctdiff[j, 10]}$, \n and the error is {np.abs(ctdiff[j, 10] - np.sin(self.times[j]))}.")
+            print(f"For the forward difference method, with step size {hvals[5]}, the derivative of $\\cos(x)$ at $t = {self.times[j]}$ is ${fwdiff[j, 5]}$,\n and the error is {np.abs(fwdiff[j, 5] - np.sin(self.times[j]))}.")
+            print(f"For the Central difference method, with step size {hvals[5]}, the derivative of $\\cos(x)$ at $t = {self.times[j]}$ is ${ctdiff[j, 5]}$, \n and the error is {np.abs(ctdiff[j, 5] - np.sin(self.times[j]))}.")
+    
+    def analysis_exp(self):
+
+        length = len(self.times)
+        hvals = []
+        fwdiff = np.empty((length, self.iterations), float)
+        ctdiff = np.empty((length, self.iterations), float)
+        colordict = {"central": "blue", "fwd": "red"}
+        self.h = self.initial_h
+        for j in range(self.iterations):
+            
+            self.h = self.h/2
+            
+            fwd, central = self.difference_method_exp()
+            hvals.append(self.h)
+            # print(len(hvals))
+
+            for i in range(length):
+                fwdiff[i, j] = fwd[i]
+                ctdiff[i, j] = central[i]
+                # print(fwdiff)
+                # print(bwdiff)
+            # print(fwdiff.shape)
+        
+        fig, axs = plt.subplots(2, length)
+        fig.set_figwidth(18)
+        fig.set_figheight(10)
+        fig.suptitle("Forward and Central Difference Methods for $f(x) = e^x$")
+        
+        for i in range(length):
+            axs[0, i].set_title(f"$t = {self.times[i]}$")
+            axs[0, i].plot(hvals, ctdiff[i, 0:], label="Central Difference")
+            axs[0, i].plot(hvals, fwdiff[i, 0:], label="Forward Difference")
+            axs[0, i].set_xlabel("$h$")
+            axs[0, i].set_xscale("log")
+            axs[0, i].set_ylabel(f"Derivative at ${self.times[i]}$ of $e^x$")
+            axs[0, i].legend()
+
+        for i in range(length):
+            axs[1, i].set_title(f"Error at $t = {self.times[i]}$")
+            axs[1, i].plot(hvals, np.abs(ctdiff[i, 0:] - np.exp(self.times[i])), marker="o", markersize=5, color=colordict["central"], label="Central Difference")
+            axs[1, i].plot(hvals, np.abs(fwdiff[i, 0:] - np.exp(self.times[i])), marker="o", markersize=5, color=colordict["fwd"], label="Forward Difference")
+            axs[1, i].set_xlabel("$h$")
+            axs[1, i].set_xscale("log")
+            axs[1, i].set_yscale("log")
+
+        plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/DifferenceMethodsExp.pdf")
+        
 
     
 
@@ -255,6 +295,7 @@ precision = Precision()
 
 diff = difference_methods()
 diff.analysis_cos()
+diff.analysis_exp()
 
 
 
