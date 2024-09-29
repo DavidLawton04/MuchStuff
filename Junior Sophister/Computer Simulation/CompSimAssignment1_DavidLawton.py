@@ -40,7 +40,6 @@ class heronsRootMethod:
                 y[j].append(i+1)
         return x, y
 
-
     # Define function to analyse the results of Heron's Method using
     # a range of initial guesses, and plots of the results.
     def analysis(self):
@@ -57,13 +56,13 @@ class heronsRootMethod:
         # Define colors for each initial guess, to allow better analysis of paths.
         # Better choices of color maps improve visibility of paths, convergence
         colors = plt.cm.bwr(np.linspace(0, 1, self.length))
+
         # First subplot: Iterations of x_n.
         axs[0].set_title(f"(a) Iterations of $x_n$")
         for i in range(self.length):
             axs[0].plot(its[i], vals[i], color=colors[i], marker='o', markersize=5, linestyle='-', linewidth=1, drawstyle='steps-mid')
         axs[0].set_xlabel("Iterations")
         axs[0].axhline(y=np.sqrt(self.c_), color="red", linestyle="--")
-        # axs[0].text(0, self.c_ - 0.1, f"{self.c_}", color="red", ha="right", va="center")
         axs[0].set_ylabel("$x_n$")
 
         # Second subplot: Relative Error of x_n.
@@ -82,7 +81,6 @@ class heronsRootMethod:
         axs[2].axhline(y=self.c_, color="red", linestyle="--")
         axs[2].text(0, self.c_ - 0.1, f"{self.c_}", color="red", ha="right", va="center")
         
-
         plt.savefig(f"/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/HeronRMF{self.c_}.pdf")
         plt.close()
         print(f"The square root of {self.c_} is {vals[0][-1]}.")
@@ -96,7 +94,6 @@ class UnderOverFlow:
         self.under = 1.0
         self.over = 1.0
 
-
     # Define function to calculate underflow.
     def underflow(self):
         i = []
@@ -107,11 +104,6 @@ class UnderOverFlow:
             i.append(len(u))
         print(f"The underflow occurred after {i[-1]} iterations.")
         print(f"The underflow values are {u[-2]}.")
-        # plt.plot(i[:-2],u[:-2])
-        # plt.yscale("log")
-        # plt.xlim(1, 10e-340)
-        # plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Underflow.pdf")
-    # x = underflow()
 
     # Define function to calculate overflow.
     def overflow(self):
@@ -126,9 +118,7 @@ class UnderOverFlow:
                 break
         print(f"The overflow occurred after {i[-1]} iterations.")
         print(f"The overflow value is {o[-2]}.")
-        # plt.plot(i[:-2],o[:-2])
-        # plt.yscale("log")
-        # plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Overflow.pdf")
+
 
 class Precision:
 
@@ -160,6 +150,7 @@ class Precision:
 
 class difference_methods:
 
+    # Define class variables.
     def __init__(self):
         self.times = np.array([0.1, 1, 100])
         self.h = 0.1
@@ -167,6 +158,7 @@ class difference_methods:
         self.initial_h = self.h
         self.label_dict = {'0': '(a)', '1': '(b)', '2': '(c)', '3': '(d)', '4': '(e)', '5': '(f)'}
 
+    # Define functions to calculate the forward and central difference methods for cos(x) and e^x.
     def difference_methods_cos(self):
         fwd = (np.cos(self.times + self.h) - np.cos(self.times))/self.h
         central = (np.cos(self.times + self.h) - np.cos(self.times - self.h))/(2*self.h)
@@ -178,6 +170,7 @@ class difference_methods:
         central = (np.exp(self.times + self.h) - np.exp(self.times - self.h))/(2*self.h)
         return fwd, central,
     
+    # Define function to analyse the results of the difference methods for cos(x) and e^x.
     def analysis_cos(self):
 
         length = len(self.times)
@@ -192,14 +185,10 @@ class difference_methods:
             
             fwd, central = self.difference_methods_cos()
             hvals.append(self.h)
-            # print(len(hvals))
 
             for i in range(length):
                 fwdiff[i, j] = fwd[i]
                 ctdiff[i, j] = central[i]
-                # print(fwdiff)
-                # print(bwdiff)
-            # print(fwdiff.shape)
         
         fig, axs = plt.subplots(2, 3)
         fig.set_figwidth(18)
@@ -226,12 +215,15 @@ class difference_methods:
             axs[1, i].set_yscale("log")
             axs[1, i].legend()
 
+        # Printing the plots to a pdf file.
         plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/DifferenceMethodsCos.pdf")
 
+        # Printing the results of the analysis to the terminal.
         for j in range(length):
             print(f"For the forward difference method, with step size {hvals[5]}, the derivative of cos(x) at $t = {self.times[j]}$ is ${fwdiff[j, 5]}$,\n and the error is {np.abs(fwdiff[j, 5] - np.sin(self.times[j]))}.")
             print(f"For the Central difference method, with step size {hvals[5]}, the derivative of cos(x) at $t = {self.times[j]}$ is ${ctdiff[j, 5]}$, \n and the error is {np.abs(ctdiff[j, 5] - np.sin(self.times[j]))}.")
     
+
     def analysis_exp(self):
 
         length = len(self.times)
@@ -279,35 +271,32 @@ class difference_methods:
             axs[1, i].set_yscale("log")
 
         plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/DifferenceMethodsExp.pdf")
+        
         for j in range(length):
             print(f"For the forward difference method, with step size {hvals[5]}, the derivative of e^x at $t = {self.times[j]}$ is ${fwdiff[j, 5]}$,\nand the error is {np.abs(fwdiff[j, 5] - np.exp(self.times[j]))}.")
             print(f"For the Central difference method, with step size {hvals[5]}, the derivative of e^x at $t = {self.times[j]}$ is ${ctdiff[j, 5]}$,\nand the error is {np.abs(ctdiff[j, 5] - np.exp(self.times[j]))}.")
-        
-
-    
 
 
 
 # Run analysis of Heron's Method for the range of initial guesses.
 # Create an instance of the heronsRootMethod class
 heron = heronsRootMethod()
+underflow = UnderOverFlow()
+precision = Precision()
+diff = difference_methods()
 
-# Call the analysis method on the instance
+# Call the required method as needed from each instance
+
 # heron.analysis()
 
-underflow = UnderOverFlow()
-# underflow.integer_underflow()
-# underflow.integer_overflow()
 # underflow.underflow()
 # underflow.overflow()
 
-precision = Precision()
 # precision.precisionmod()
 # precision.complexprecisionmod()
-
-diff = difference_methods()
-diff.analysis_cos()
-diff.analysis_exp()
+#
+# diff.analysis_cos()
+# diff.analysis_exp()
 
 
 
