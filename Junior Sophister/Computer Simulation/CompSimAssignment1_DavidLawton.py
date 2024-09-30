@@ -81,8 +81,8 @@ class heronsRootMethod:
         axs[2].axhline(y=self.c_, color="red", linestyle="--")
         axs[2].text(0, self.c_ - 0.1, f"{self.c_}", color="red", ha="right", va="center")
         
-        plt.savefig(f"/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/HeronRMF{self.c_}.pdf")
-        plt.close()
+        # plt.savefig(f"/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/HeronRMF{self.c_}.pdf")
+        plt.show()
         print(f"The square root of {self.c_} is {vals[0][-1]}.")
         print(f"$(x_n)^2$ converges to {vals[0][-1]**2} after {its[0][-1]} iterations.")
     
@@ -126,7 +126,6 @@ class Precision:
         self.precision = 1.0
         self.compprecision = 1.0j
         
-
     # Define function to calculate precision.
     def precisionmod(self):
         i = 0
@@ -135,10 +134,6 @@ class Precision:
             i += 1
         print(f"The real precision is {self.precision}.")
         print(f"The complex precision estimate occurred after {i} iterations.")
-        # plt.plot(i, precision)
-        # plt.yscale("log")
-        # plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Precision.pdf")
-    # x = precision()
 
     def complexprecisionmod(self):
         j = 0
@@ -216,7 +211,8 @@ class difference_methods:
             axs[1, i].legend()
 
         # Printing the plots to a pdf file.
-        plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/DifferenceMethodsCos.pdf")
+        # plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/DifferenceMethodsCos.pdf")
+        plt.show()
 
         # Printing the results of the analysis to the terminal.
         for j in range(length):
@@ -270,8 +266,9 @@ class difference_methods:
             axs[1, i].set_xscale("log")
             axs[1, i].set_yscale("log")
 
-        plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/DifferenceMethodsExp.pdf")
-        
+        # plt.savefig("/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/DifferenceMethodsExp.pdf")
+        plt.show()
+                
         for j in range(length):
             print(f"For the forward difference method, with step size {hvals[5]}, the derivative of e^x at $t = {self.times[j]}$ is ${fwdiff[j, 5]}$,\nand the error is {np.abs(fwdiff[j, 5] - np.exp(self.times[j]))}.")
             print(f"For the Central difference method, with step size {hvals[5]}, the derivative of e^x at $t = {self.times[j]}$ is ${ctdiff[j, 5]}$,\nand the error is {np.abs(ctdiff[j, 5] - np.exp(self.times[j]))}.")
