@@ -61,3 +61,9 @@ counter = 0
 while counter < n_loop:
     print('The counter value is: ', counter)
     counter += 1
+
+while counter >= n_loop:
+    print('The counter value is: ', counter)
+    counter += 1
+    if counter > 20:
+        break
