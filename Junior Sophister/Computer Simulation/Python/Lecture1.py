@@ -67,3 +67,20 @@ while counter >= n_loop:
     counter += 1
     if counter > 20:
         break
+
+for x in my_list:
+    print(x)
+
+
+# One way of generating a list of numbers
+square_list = []
+for ind in range(n_loop):
+    square_list.append(ind**2)
+print(square_list)
+
+# Another way of generating a list of numbers
+# List comprehension
+cube_list = [ind**3 for ind in range(2, 11)]
+cube_list2 = [ind**3 for ind in range(2, 11) if ind != 5]
+print(cube_list, cube_list2)
+print(cube_list + cube_list2)
