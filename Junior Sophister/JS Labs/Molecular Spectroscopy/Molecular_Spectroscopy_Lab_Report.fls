@@ -352,10 +352,16 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Mercury_Saturation_Limit.png
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Mercury_Saturation_Limit.png
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Mercury_Saturation_Limit.png
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Mercury_Saturation_Limit.png
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Mercury_Saturation_Limit.png
 INPUT ./Molecular_Spectroscopy_Lab_Report.bbl
 INPUT ./Molecular_Spectroscopy_Lab_Report.bbl
 INPUT Molecular_Spectroscopy_Lab_Report.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT Molecular_Spectroscopy_Lab_Report.aux
 INPUT ./Molecular_Spectroscopy_Lab_Report.out
 INPUT ./Molecular_Spectroscopy_Lab_Report.out
@@ -377,4 +383,5 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

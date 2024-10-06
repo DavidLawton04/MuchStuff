@@ -8,13 +8,13 @@
 \contentsline {section}{\numberline {3}Methodology}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Calibration}{6}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Emission Spectrum of $N_2$}{6}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Absorption Spectrum of $I_2$}{7}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Results}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Calibration}{7}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Emission Spectrum of $N_2$}{7}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Discussion}{7}{section.5}%
-\contentsline {section}{\numberline {6}Appendix}{8}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Keywords, Mathematical Preliminaries}{8}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Keywords}{8}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Mathematical Preliminaries}{8}{subsubsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.2}Code}{8}{subsection.6.2}%
+\contentsline {subsection}{\numberline {3.3}Absorption Spectrum of $I_2$}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Results}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Calibration}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Emission Spectrum of $N_2$}{8}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Discussion}{8}{section.5}%
+\contentsline {section}{\numberline {6}Appendix}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Keywords, Mathematical Preliminaries}{9}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Keywords}{9}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Mathematical Preliminaries}{9}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}Code}{10}{subsection.6.2}%

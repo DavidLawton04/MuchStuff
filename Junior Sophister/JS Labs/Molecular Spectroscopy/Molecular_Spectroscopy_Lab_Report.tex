@@ -184,6 +184,7 @@ This allows us to calculate one (or more) values of $\tilde{\nu}_C$, $\tilde{\nu
 The general steps we took to setup for the procedure were first to ensure the spectrometer was connected to the computer, before turning on the computer and opening the software. We then carefully put the fibre optic cable corresponding to the spectrometer of lower threshold  into the higher clamp, used for observation.
 
 \subsection{Calibration}
+\label{sec:calibration}
 The first section section of the procedure was the calibration of the spectrometers, which involved placing the calibration lamp (Mercury) directly facing the optical fibre (and wall).\\
 \indent We varied the parameters of the sample, which were the integration time, the scans to average, the bin width, and correction for dark current, and noted the affects of varying each. We then tried to optimise our parameters for a low error, low noise sample. This involved keeping our integration time so that the maximum lied under the saturation point, since increasing the sample size reduces the effect of the noise, relative to the size of the sample. We also tried to do this while keeping a large number of scans to average, keeping bin widths small, and keeping electrical dark correction on.\\
 \indent It followed only to capture the emission spectrum of mercury using the Flame-T spectrometer (lower threshold, $300-510nm$), swapped the optical fibres, and then captured the emission spectrum using the Flame-S spectrometer (higher threshold, $350-850nm$).\\
@@ -196,6 +197,33 @@ The second part of the experiment was to capture the emission spectrum of $N_2$ 
 
 \section{Results}
 \subsection{Calibration}
+The results of the first part of the procedure, section \ref{sec:calibration}, were threefold. First we observed the effect of changing the collection parameters on the emission spectrum, and noted the value of saturation of the spectrometer. Secondly, after capturing the mercury emission spectrum, we estimated the optical resolution as the average of the full-width half-maximums of the Gaussian fits of our single peaks. Finally, we compared the centres of the Gaussian fits to the literature values of the strong lines of the mercury spectrum.\\
+\indent We begin with the first results, the effect of changing the collection parameters on the emission spectrum.\\
+\begin{tabular}{p{0.25\textwidth}p{0.25\textwidth}p{0.25\textwidth}p{0.25\textwidth}}
+    \hline
+    \hline
+    Integration Time (ms) & Scans to Average & Bin Width (nm) & Dark Correction\\
+    \hline
+    Increase: & Increase: & Increase: & On\\
+    Larger count, reducing sample error of count, relative effect of noise. & Reduced fluctuation, which is due to standard error of the mean, and so reduced count error. &  Smoother spectrum, potential loss of data, and increase of error. & Shifts counts down by value caused by electric dark current(\ref{kew: DarkCurrent}).\\
+    \hline
+    Decrease: & Decrease: & Decrease: & Off\\
+    Smaller count and increased error of count, significantly affects appearance of smaller peaks. & Increases fluctuation, and thus count error, but reduces time of collection. & More detailed spectrum, but increased effects of noise. & No correction for electric dark current, causing upward shift of counts.\\
+    \hline
+    Definitions: &~&~&~\\
+    Keyword \ref{kew:int_time}& Keyword \ref{kew:s_t_a}& Keyword \ref{kew:binwidth}& Keyword \ref{kew: DarkCurrent}\\
+    \hline
+    \hline
+\end{tabular}
+\vspace{1cm}\\
+These results were then used in the optimisation of each spectrum collected.
+\indent The value at which the count data saturated (with electric dark off) was exactly 65,535 counts as can be seen in figure \ref{fig:MercurySaturation}. This value allows us to deduce the amount of bits the ADC () has, since the total number of counts it can encode per wavelength is expected to be $2^s$, where $s$ is the number of bits. Since we expect the ADC to have 12, 14 or 16 bits, we evaluated the saturation value for these, and found $2^{16}=65536$, which, including $0$ is the total number of possible values of counts (since electric dark off, no negative, non-integer values per scan).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Mercury_Saturation_Limit.png}
+    \caption{\label{fig:MercurySaturation} The saturation limit of the spectrometer at 65535 counts, as read from the data, visualised.}
+\end{figure}
+% \vspace{2cm}\\
 \begin{tabular}{c|c|c|c|c}
     \hline
     \hline
@@ -214,6 +242,7 @@ The second part of the experiment was to capture the emission spectrum of $N_2$ 
     \hline
     \hline
 \end{tabular}
+\vspace{1cm}\\
 If we assume that the offset is constant, we can take the average of the differences, and add this to any measured spectrum to get the corrected spectrum. These offsets are $0.847nm$ and $4.574nm$ for the Flame-T and Flame-S spectrometers.\\
 \indent The optical resolution we found by fitting Gaussian distributions to the single peaks of the mercury spectrum,
 
@@ -227,7 +256,7 @@ If we assume that the offset is constant, we can take the average of the differe
 \begin{enumerate}
     \item \textbf{Vibronic Transition:} A transition between vibrational and electronic energy levels.
     
-    \item \textbf{Franck-Condon Principle:} The principle that states that an electronic transition is most likely to occur without changes in the positions of the nuclei in the molecular entity and its environment (vibrational, external motion).
+    \item \textbf{Franck-Condon Principle:} The principle that states that an electronic transition is most likely to occur without changes in the positions of the nuclei in the molecular entity and its environment (vibrational, external motion)\cite{MolecularSpectroscopy}.
     
     \item \textbf{Morse Potential:} A potential used to describe the energy levels of a molecule, which accounts for the finite energy $D_e$ which is the depth of the well.
     
@@ -239,17 +268,19 @@ If we assume that the offset is constant, we can take the average of the differe
     
     \item \textbf{Wavenumber:} The reciprocal of the wavelength of a wave, expressed in $m^{-1}$.
     
-    \item \textbf{Integration Time:} The time taken to measure the sample.
+    \item \label{kew:int_time}\textbf{Integration Time:} The time taken to measure the sample.
     
-    \item \textbf{Scans to Average:} The number of scans taken to average the sample.
+    \item \label{kew:s_t_a}\textbf{Scans to Average:} The number of scans taken to average the sample.
     
-    \item \textbf{Bin Width:} The width of the bins used to measure the sample.
+    \item \label{kew:binwidth}\textbf{Bin Width:} The width of the bins used to measure the sample.
     
-    \item \textbf{Dark Current:} The current that flows through the spectrometer when no light is incident on the detector.
+    \item \label{kew: DarkCurrent}\textbf{Dark Current:} The current that flows through the spectrometer when no light is incident on the detector.
     
     \item \textbf{Dissociation Energy:} The energy required to break a bond in a molecule.
     
     \item \textbf{Anharmonicity Constant:} A constant that describes the deviation of a potential from the harmonic oscillator model.
+    
+    \item \textbf{ADC:} Analogue to Digital converter, which converts continuous-time, continuous amplitude, voltage input to discrete-time, discrete-amplitude digital output \cite{enwiki:1248045950}.
     
 \end{enumerate}
 \subsubsection{Mathematical Preliminaries}

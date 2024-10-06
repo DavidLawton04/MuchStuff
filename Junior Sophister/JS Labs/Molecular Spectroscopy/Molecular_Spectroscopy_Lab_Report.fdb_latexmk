@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex Molecular_Spectroscopy_Lab_Report"] 1728177301.40072 "Molecular_Spectroscopy_Lab_Report.aux" "Molecular_Spectroscopy_Lab_Report.bbl" "Molecular_Spectroscopy_Lab_Report" 1728180983.23168 0
-  "./references.bib" 1728149289.65661 2527 6cc145ab17587e6b5f7901861e7a5661 ""
+["bibtex Molecular_Spectroscopy_Lab_Report"] 1728232431.55797 "Molecular_Spectroscopy_Lab_Report.aux" "Molecular_Spectroscopy_Lab_Report.bbl" "Molecular_Spectroscopy_Lab_Report" 1728232433.34233 0
+  "./references.bib" 1728232427.06467 3063 61b77609719a21dc3205686a6d953a81 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "Molecular_Spectroscopy_Lab_Report.aux" 1728180982.98753 4909 3168dd9b0fc956784790aac8d825ea34 "pdflatex"
+  "Molecular_Spectroscopy_Lab_Report.aux" 1728232433.14018 5670 5c719fc87a448aea858decb040825a3e "pdflatex"
   (generated)
   "Molecular_Spectroscopy_Lab_Report.bbl"
   "Molecular_Spectroscopy_Lab_Report.blg"
   (rewritten before read)
-["pdflatex"] 1728180981.44461 "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Molecular_Spectroscopy_Lab_Report.tex" "Molecular_Spectroscopy_Lab_Report.pdf" "Molecular_Spectroscopy_Lab_Report" 1728180983.23211 0
+["pdflatex"] 1728232431.61658 "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Molecular_Spectroscopy_Lab_Report.tex" "Molecular_Spectroscopy_Lab_Report.pdf" "Molecular_Spectroscopy_Lab_Report" 1728232433.34265 0
   "/etc/texmf/web2c/texmf.cnf" 1695845280.71272 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Molecular_Spectroscopy_Lab_Report.tex" 1728180973.25268 19210 183dcd50cf01476a54fcc9de54804eb3 ""
+  "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Molecular_Spectroscopy_Lab_Report.tex" 1728232427.06467 22418 413a587b6181773fe4c2016e5a4aece2 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -41,6 +41,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
@@ -59,6 +60,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -201,13 +203,14 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1719069542 6851218 4c73941fa8c1fdb11510831324b33f75 ""
   "Images/Crossed-Czerny-TurnerType.jpg" 1728069207.58536 21999 09e2a932458bcc162918ffbea90a4655 ""
   "Images/Franck_Condon.png" 1728089931.25519 123956 fc2eb1cf18f6e07621fb564207b0af69 ""
+  "Images/Mercury_Saturation_Limit.png" 1728230834.45344 37667 f7653d0d6c62635ee16afeec99aaf085 ""
   "Images/MorsePotential.jpg" 1728075368.00484 29877 5fd3d89c4685e96aee366f081ecfeec2 ""
   "Images/Nitrogen_Energies.png" 1728086463.69851 13002 f038c4520fed9aa9f409ea9a88f760ba ""
-  "Molecular_Spectroscopy_Lab_Report.aux" 1728180982.98753 4909 3168dd9b0fc956784790aac8d825ea34 "pdflatex"
-  "Molecular_Spectroscopy_Lab_Report.bbl" 1728177301.43296 1470 c1c64ae7549a1b86517bb71da6f0b9e4 "bibtex Molecular_Spectroscopy_Lab_Report"
-  "Molecular_Spectroscopy_Lab_Report.out" 1728180982.98853 2946 987a4141b04b0c9e19e5b55faffee188 "pdflatex"
-  "Molecular_Spectroscopy_Lab_Report.tex" 1728180973.25268 19210 183dcd50cf01476a54fcc9de54804eb3 ""
-  "Molecular_Spectroscopy_Lab_Report.toc" 1728180982.98953 1672 4f9ba3ee57a4f96b9b96a166c720f64f "pdflatex"
+  "Molecular_Spectroscopy_Lab_Report.aux" 1728232433.14018 5670 5c719fc87a448aea858decb040825a3e "pdflatex"
+  "Molecular_Spectroscopy_Lab_Report.bbl" 1728232431.60405 1886 a66455a6051a7efe46fe8c21540c2243 "bibtex Molecular_Spectroscopy_Lab_Report"
+  "Molecular_Spectroscopy_Lab_Report.out" 1728232433.14118 2946 987a4141b04b0c9e19e5b55faffee188 "pdflatex"
+  "Molecular_Spectroscopy_Lab_Report.tex" 1728232427.06467 22418 413a587b6181773fe4c2016e5a4aece2 ""
+  "Molecular_Spectroscopy_Lab_Report.toc" 1728232433.14118 1673 5c77fb319bfedb33c97d61f0d471c905 "pdflatex"
   (generated)
   "Molecular_Spectroscopy_Lab_Report.aux"
   "Molecular_Spectroscopy_Lab_Report.log"
