@@ -216,35 +216,37 @@ The results of the first part of the procedure, section \ref{sec:calibration}, w
     \hline
 \end{tabular}
 \vspace{1cm}\\
-These results were then used in the optimisation of each spectrum collected.
-\indent The value at which the count data saturated (with electric dark off) was exactly 65,535 counts as can be seen in figure \ref{fig:MercurySaturation}. This value allows us to deduce the amount of bits the ADC () has, since the total number of counts it can encode per wavelength is expected to be $2^s$, where $s$ is the number of bits. Since we expect the ADC to have 12, 14 or 16 bits, we evaluated the saturation value for these, and found $2^{16}=65536$, which, including $0$ is the total number of possible values of counts (since electric dark off, no negative, non-integer values per scan).
+These results were then used in the optimisation of each spectrum collected.\\
+\indent The value at which the count data saturated (with electric dark off) was exactly 65,535 counts as can be seen in figure \ref{fig:MercurySaturation}. This value allows us to deduce the amount of bits the ADC (Keyword \ref{kew: ADC}) has, since the total number of counts it can encode per wavelength is expected to be $2^s$, where $s$ is the number of bits. Since we expect the ADC to have 12, 14 or 16 bits, we evaluated the saturation value for these, and found $2^{16}=65536$, which, including $0$ is the total number of possible values of counts (since electric dark off, no negative, non-integer values per scan).
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Mercury_Saturation_Limit.png}
     \caption{\label{fig:MercurySaturation} The saturation limit of the spectrometer at 65535 counts, as read from the data, visualised.}
 \end{figure}
 % \vspace{2cm}\\
-\begin{tabular}{c|c|c|c|c}
+\indent After capturing the mercury emission spectrum, we found the peaks of the spectrum using the code provided, and compared the centres of the Gaussian fits to the literature values.\\
+\begin{tabular}{p{0.19\textwidth}|p{0.19\textwidth}|p{0.19\textwidth}|p{0.19\textwidth}|p{0.19\textwidth}}
     \hline
     \hline
-    Expected\cite{article2} & Measured FLM-T & |Expected-MeasureFLMT| & Measured FLM-S & |Expected-MeasureFLMS|\\
+    Expected\cite{article2} & Measured FLM-T & Expected-Measured FLMT & Measured FLM-S & Expected-Measured FLMS\\
     (nm)& (nm)& (nm)& (nm)& (nm)\\
     \hline
-    312.567 & 313.471 & 0.883 & - & -\\
-    334.148 & 335.058 & 0.910 & - & -\\
-    365.015 & 365.929 & 0.914 & - & -\\
-    404.656 & 405.482 & 0.826 & 409.728 & 5.072 \\
-    407.750 & 408.595 & 0.845 & 413.053 & 5.303 \\
-    435.833 & 436.538 & 0.705 & 440.992 & 5.159 \\
-    546.075 & - & - & 550.284 & 4.209 \\
-    576.961 & - & - & 580.817 & 3.856 \\
-    579.067 & - & - & 582.910 & 3.843 \\
+    312.567 & $314.043\pm0.147$ & $1.476\pm0.147$& - & -\\
+    334.148 & $335.073\pm0.144$ & $0.925\pm 0.144$ & - & -\\
+    365.015 & $365.949\pm0.185$ & $0.935\pm0.185$ & - & -\\
+    366.328 & $367.228\pm0.174$ & $0.900\pm0.174$ & $370.264\pm0.617$ & $3.936\pm0.617$\\
+    404.656 & $405.456\pm0.166$ & $0.800\pm0.166$ & $409.766\pm0.474$ & $5.110\pm0.474$\\
+    407.750 & $408.571\pm0.174$ & $0.821\pm0.174$ & $412.831\pm0.828$ & $5.081\pm0.828$ \\
+    435.833 & $436.549\pm0.160$ & $0.716\pm0.160$ & $440.884\pm0.589$ & $5.051\pm0.589$\\
+    546.075 & - & - & $550.526\pm0.882$ & $4.451\pm0.882$ \\
+    576.961 & - & - & $581.127\pm0.746$ & $4.166\pm0.746$ \\
+    579.067 & - & - & $582.873\pm0.965$ & $3.806\pm0.965$ \\
     \hline
     \hline
 \end{tabular}
 \vspace{1cm}\\
-If we assume that the offset is constant, we can take the average of the differences, and add this to any measured spectrum to get the corrected spectrum. These offsets are $0.847nm$ and $4.574nm$ for the Flame-T and Flame-S spectrometers.\\
-\indent The optical resolution we found by fitting Gaussian distributions to the single peaks of the mercury spectrum,
+If we assume that the offset is constant, we can take the average of the differences, and add this to any measured spectrum to get the corrected spectrum. These offsets are $(0.939\pm0.0623)nm$ and $(4.514\pm0.282) nm$ for the Flame-T and Flame-S spectrometers, where the error is propogated through the averaging by adding in quadrature, and dividing by sample size.\\
+\indent The optical resolution we found by fitting Gaussian distributions to the single peaks of 
 
 \subsection{Emission Spectrum of $N_2$}
 \section{Discussion}
@@ -280,7 +282,7 @@ If we assume that the offset is constant, we can take the average of the differe
     
     \item \textbf{Anharmonicity Constant:} A constant that describes the deviation of a potential from the harmonic oscillator model.
     
-    \item \textbf{ADC:} Analogue to Digital converter, which converts continuous-time, continuous amplitude, voltage input to discrete-time, discrete-amplitude digital output \cite{enwiki:1248045950}.
+    \item \label{kew: ADC}\textbf{ADC:} Analogue to Digital converter, which converts continuous-time, continuous amplitude, voltage input to discrete-time, discrete-amplitude digital output \cite{enwiki:1248045950}.
     
 \end{enumerate}
 \subsubsection{Mathematical Preliminaries}
