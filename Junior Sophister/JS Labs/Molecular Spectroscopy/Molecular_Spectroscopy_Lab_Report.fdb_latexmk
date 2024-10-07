@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex Molecular_Spectroscopy_Lab_Report"] 1728248063.21233 "Molecular_Spectroscopy_Lab_Report.aux" "Molecular_Spectroscopy_Lab_Report.bbl" "Molecular_Spectroscopy_Lab_Report" 1728248148.54687 0
-  "./references.bib" 1728232427.06467 3063 61b77609719a21dc3205686a6d953a81 ""
+["bibtex Molecular_Spectroscopy_Lab_Report"] 1728268672.75319 "Molecular_Spectroscopy_Lab_Report.aux" "Molecular_Spectroscopy_Lab_Report.bbl" "Molecular_Spectroscopy_Lab_Report" 1728268672.84919 0
+  "./references.bib" 1728268672.26024 3288 3c8853097ddf278cd6fb95b3774cd04d ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "Molecular_Spectroscopy_Lab_Report.aux" 1728248148.22107 5720 f658439ff3501e27de1c6cdd401c0ded "pdflatex"
+  "Molecular_Spectroscopy_Lab_Report.aux" 1728268609.95924 6109 9f8987494d75d1cef42c9d20f7bbe1bb "pdflatex"
   (generated)
   "Molecular_Spectroscopy_Lab_Report.bbl"
   "Molecular_Spectroscopy_Lab_Report.blg"
   (rewritten before read)
-["pdflatex"] 1728248146.15638 "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Molecular_Spectroscopy_Lab_Report.tex" "Molecular_Spectroscopy_Lab_Report.pdf" "Molecular_Spectroscopy_Lab_Report" 1728248148.5472 0
+["pdflatex"] 1728268607.92498 "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Molecular_Spectroscopy_Lab_Report.tex" "Molecular_Spectroscopy_Lab_Report.pdf" "Molecular_Spectroscopy_Lab_Report" 1728268672.84952 0
   "/etc/texmf/web2c/texmf.cnf" 1695845280.71272 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Molecular_Spectroscopy_Lab_Report.tex" 1728248145.76507 23162 b3f369f92c3e2d9d3edc52bdebf575eb ""
+  "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Molecular_Spectroscopy_Lab_Report.tex" 1728261746.01519 25525 1e5de02ae94174e2820c96729ae4a93a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -206,11 +206,12 @@
   "Images/Mercury_Saturation_Limit.png" 1728230834.45344 37667 f7653d0d6c62635ee16afeec99aaf085 ""
   "Images/MorsePotential.jpg" 1728075368.00484 29877 5fd3d89c4685e96aee366f081ecfeec2 ""
   "Images/Nitrogen_Energies.png" 1728086463.69851 13002 f038c4520fed9aa9f409ea9a88f760ba ""
-  "Molecular_Spectroscopy_Lab_Report.aux" 1728248148.22107 5720 f658439ff3501e27de1c6cdd401c0ded "pdflatex"
-  "Molecular_Spectroscopy_Lab_Report.bbl" 1728248063.30807 1886 a66455a6051a7efe46fe8c21540c2243 "bibtex Molecular_Spectroscopy_Lab_Report"
-  "Molecular_Spectroscopy_Lab_Report.out" 1728248148.22407 2946 987a4141b04b0c9e19e5b55faffee188 "pdflatex"
-  "Molecular_Spectroscopy_Lab_Report.tex" 1728248145.76507 23162 b3f369f92c3e2d9d3edc52bdebf575eb ""
-  "Molecular_Spectroscopy_Lab_Report.toc" 1728248148.22507 1673 5c77fb319bfedb33c97d61f0d471c905 "pdflatex"
+  "Images/ResolutionvsWavelength.png" 1728259380.90517 48710 ed18e6226604849735dece74918d39bc ""
+  "Molecular_Spectroscopy_Lab_Report.aux" 1728268609.95924 6109 9f8987494d75d1cef42c9d20f7bbe1bb "pdflatex"
+  "Molecular_Spectroscopy_Lab_Report.bbl" 1728268672.80424 1886 a66455a6051a7efe46fe8c21540c2243 "bibtex Molecular_Spectroscopy_Lab_Report"
+  "Molecular_Spectroscopy_Lab_Report.out" 1728268609.96224 2946 987a4141b04b0c9e19e5b55faffee188 "pdflatex"
+  "Molecular_Spectroscopy_Lab_Report.tex" 1728261746.01519 25525 1e5de02ae94174e2820c96729ae4a93a ""
+  "Molecular_Spectroscopy_Lab_Report.toc" 1728268609.96424 1677 bb6a937221fc01e3e724ff3b387b8448 "pdflatex"
   (generated)
   "Molecular_Spectroscopy_Lab_Report.aux"
   "Molecular_Spectroscopy_Lab_Report.log"

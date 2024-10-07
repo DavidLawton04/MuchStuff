@@ -255,14 +255,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT ./Molecular_Spectroscopy_Lab_Report.out
-INPUT ./Molecular_Spectroscopy_Lab_Report.out
-INPUT Molecular_Spectroscopy_Lab_Report.out
-INPUT Molecular_Spectroscopy_Lab_Report.out
-OUTPUT Molecular_Spectroscopy_Lab_Report.pdf
-INPUT ./Molecular_Spectroscopy_Lab_Report.out
-INPUT ./Molecular_Spectroscopy_Lab_Report.out
 OUTPUT Molecular_Spectroscopy_Lab_Report.out
+OUTPUT Molecular_Spectroscopy_Lab_Report.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -291,9 +285,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./Molecular_Spectroscopy_Lab_Report.toc
-INPUT ./Molecular_Spectroscopy_Lab_Report.toc
-INPUT Molecular_Spectroscopy_Lab_Report.toc
+OUTPUT Molecular_Spectroscopy_Lab_Report.toc
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Crossed-Czerny-TurnerType.jpg
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Crossed-Czerny-TurnerType.jpg
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Crossed-Czerny-TurnerType.jpg
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Crossed-Czerny-TurnerType.jpg
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Crossed-Czerny-TurnerType.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -303,13 +301,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-OUTPUT Molecular_Spectroscopy_Lab_Report.toc
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Crossed-Czerny-TurnerType.jpg
-INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Crossed-Czerny-TurnerType.jpg
-INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Crossed-Czerny-TurnerType.jpg
-INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Crossed-Czerny-TurnerType.jpg
-INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Crossed-Czerny-TurnerType.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/MorsePotential.jpg
 INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/MorsePotential.jpg
@@ -357,11 +348,16 @@ INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/
 INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Mercury_Saturation_Limit.png
 INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Mercury_Saturation_Limit.png
 INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/Mercury_Saturation_Limit.png
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/ResolutionvsWavelength.png
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/ResolutionvsWavelength.png
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/ResolutionvsWavelength.png
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/ResolutionvsWavelength.png
+INPUT /home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/ResolutionvsWavelength.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT ./Molecular_Spectroscopy_Lab_Report.bbl
 INPUT ./Molecular_Spectroscopy_Lab_Report.bbl
 INPUT Molecular_Spectroscopy_Lab_Report.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT Molecular_Spectroscopy_Lab_Report.aux
 INPUT ./Molecular_Spectroscopy_Lab_Report.out
 INPUT ./Molecular_Spectroscopy_Lab_Report.out
