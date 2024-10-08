@@ -10,16 +10,27 @@ print(df_pop2.head(),'\n','\n', df_pop1.head())
 
 df_pop1['Ln Population'] = np.log(df_pop1['Population'])
 df_pop2['Ln Population'] = np.log(df_pop2['Population'])
+print(df_pop1['Ln Population'])
 
-def logaritmic_growth(x, a, b):
+def Logarithmic_growth(x, a, b):
     return a + b*x
 
-df_pop1['subset_pop1'] = df_pop1['Ln Population'].iloc[0:3]
-df_pop2['subset_pop2'] = df_pop2['Ln Population'].iloc[0:45]
-params1, covariance1 = curve_fit(logaritmic_growth, df_pop1['Year'], df_pop1['subset_pop1'])
-params2, covariance2 = curve_fit(logaritmic_growth, df_pop2['Year'], df_pop2['subset_pop2'])
+subset_df_pop1 = df_pop1.iloc[0:3]
+
+subset_df_pop2 = df_pop2.iloc[0:45]
+print(subset_df_pop1['Ln Population'])
+print(subset_df_pop2.isnull())
+
+# Check for inf and nan values in the series
+
+
+
+params1, covariance1 = curve_fit(Logarithmic_growth, subset_df_pop1['Year'], subset_df_pop1['Ln Population'])
+params2, covariance2 = curve_fit(Logarithmic_growth, subset_df_pop2['Year'], subset_df_pop2['Ln Population'])
+
 sigma1 = np.sqrt(np.diag(covariance1))
 sigma2 = np.sqrt(np.diag(covariance2))
+print(sigma1, sigma2)
 
 fig, axs = plt.subplots(1,2)
 fig.suptitle('Population vs Year')
@@ -40,12 +51,22 @@ axs[0].legend()
 axs[1].set_xlabel('Year')
 axs[1].set_ylabel('$\ln(N)$')
 axs[1].set_title('Ln Population vs Year')
-axs[1].plot(df_pop1['Year'], df_pop1['Ln Population'], label='Gapminder Dataset')
-axs[1].plot(df_pop2['Year'], df_pop2['Ln Population'], label='Census Bureau Dataset')
-axs[1].plot(df_pop1['Year'].iloc[0:3], logaritmic_growth(df_pop1['Year'].iloc[0:3], *params1), label='Gapminder Fit', color='blue')
-axs[1].plot(df_pop2['Year'].iloc[0:45], logaritmic_growth(df_pop2['Year'].iloc[0:45], *params2), label='Census Bureau Fit', color='red')
-axs[1].fill_between(logaritmic_growth(df_pop1['Year'].iloc[0:3], params1[0]+sigma1[0,0], params1[1, 1]+sigma1[1,1], color='blue', alpha=0.3), logaritmic_growth(df_pop1['Year'].iloc[0:3], params1[0]-sigma1[0,0], params1[1, 1]-sigma1[1,1]), color='blue', alpha=0.3)
+axs[1].plot(df_pop1['Year'], df_pop1['Ln Population'], alpha=0.6, label='Gapminder Dataset')
+axs[1].plot(df_pop2['Year'], df_pop2['Ln Population'], alpha=0.6, label='Census Bureau Dataset')
+
+# Plot the fit
+axs[1].plot(subset_df_pop1['Year'], Logarithmic_growth(subset_df_pop1['Year'], *params1), label='Gapminder Fit', color='blue')
+axs[1].plot(subset_df_pop2['Year'], Logarithmic_growth(subset_df_pop2['Year'], *params2), label='Census Bureau Fit', color='red')
+
+# 95% confidence interval
+axs[1].fill_between(subset_df_pop1['Year'],Logarithmic_growth(subset_df_pop1['Year'], params1[0]+2*sigma1[0], params1[1]), Logarithmic_growth(subset_df_pop1['Year'], params1[0]-2*sigma1[0], params1[1]), color='blue', alpha=0.3)
+axs[1].fill_between(subset_df_pop2['Year'],Logarithmic_growth(subset_df_pop2['Year'], params2[0]+2*sigma2[0], params2[1]), Logarithmic_growth(subset_df_pop2['Year'], params2[0]-2*sigma2[0], params2[1]), color='red', alpha=0.3)
+
+#Legend
 axs[1].legend()
+
+print(f'Slope of first fit: {params1[1] } ± {sigma1[1]}', f'Intercept of first fit: {params1[0]} ± {sigma1[0]}')
+print(f'Slope of second fit: {params2[1]} ± {sigma2[1]}', f'Intercept of second fit: {params2[0]} ± {sigma2[0]}')
 
 plt.savefig('Computer Simulation/Numerical Methods/Assignment 2/population_growth.png')
 plt.show()

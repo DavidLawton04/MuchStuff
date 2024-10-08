@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{1988JChPh..88.4535D}
 Jens~Peder {Dahl} and Michael {Springborg}.
@@ -10,6 +10,11 @@ James (https://physics.stackexchange.com/users/5201/james).
 \newblock {Why are overtones forbidden within the harmonic approximation?}
 \newblock Physics Stack Exchange.
 \newblock URL:https://physics.stackexchange.com/q/21316 (version: 2012-06-10).
+
+\bibitem{article3}
+A.~Lofthus and P.~Krupenie.
+\newblock The spectrum of molecular nitrogen.
+\newblock {\em Journal of Physical and Chemical Reference Data}, 6, 01 1977.
 
 \bibitem{doi:10.1080/00268976.2024.2360542}
 Amir Mirzanejad and Sergey~A. Varganov.

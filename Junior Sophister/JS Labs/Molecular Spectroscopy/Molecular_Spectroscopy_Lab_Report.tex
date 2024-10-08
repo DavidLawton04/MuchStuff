@@ -28,7 +28,8 @@
 \newpage
 
 \section{Abstract}
-
+The experiment described in this report regarded the use of two moderate resolution spectrometers to analyse the emission spectrum of $N_2$. The spectrometers were calibrated using a mercury lamp, and the emission spectrum of $N_2$ was captured afterward. The wavenumbers of the peaks were calculated, and used to calculate the dissociation energy of the molecule, as well as the values of $\tilde{\nu}_B$, $\tilde{\nu}_Bx_B$, $\tilde{\nu}_C$, and $\tilde{\nu}_Cx_C$, parameters of the vibronic transition emissions.\\
+\indent While initially, there were further parts for which data was collected, involving the $I_2$ absorption spectrum, the data was not used in the final analysis due to time constraints, and so is not included in this report.\\
 \section{Introduction}
 \begin{wrapfigure}{r}{0.5\textwidth}
     \centering
@@ -132,6 +133,7 @@ To predict the wavenumber of emitted spectral lines in vibronic transition, we m
 where the subscript C refers to the initial electronic state, $E_3$, and the subscript B refers to the final electronic state, $E_2$.\\
 \indent We can then rearrange the equation to remove constant $\tilde{\nu}_{el}$, and write the equation in terms of the wavenumber of the $0-0$ transition:
 \begin{equation}
+    \label{eq: vibronicTransitionwavenumber}
     \tilde{\nu}_{\nu^{\prime}\nu^{''}} = \tilde{\nu}_{00} + \tilde{\nu}_C\nu^{\prime} - \tilde{\nu}_B\nu^{''} - \tilde{\nu}_Cx_C(\nu^{\prime}+1)\nu^{\prime} + \tilde{\nu}_Bx_B(\nu^{''}+1)\nu^{''}
 \end{equation}
 \indent We then, after measuring sufficiently many wavenumbers of peaks, are left with a solvable system of equations, with 4 unknowns, $\tilde{\nu}_C$, $\tilde{\nu}_B$, $x_C$, and $x_B$.
@@ -175,10 +177,18 @@ where the subscript C refers to the initial electronic state, $E_3$, and the sub
         -\tilde{\nu}_{10}\tilde{\nu}_{20}
     \end{pmatrix}
 \end{align}
-This allows us to calculate one (or more) values of $\tilde{\nu}_C$, $\tilde{\nu}_B$, $x_B$, and $x_C$.  It is easier for us to calculate the values of $\tilde{\nu}_Cx_C$ and $\tilde{\nu}_Bx_B$ instead of $x_C$ and $x_B$ separately, as we can then calculate the dissociation energy of the molecule, $D_0$, simply, using the formula:
+This allows us to calculate one (or more) values of $\tilde{\nu}_C$, $\tilde{\nu}_B$, $x_B$, and $x_C$.  It is easier for us to calculate the values of $\tilde{\nu}_Cx_C$ and $\tilde{\nu}_Bx_B$ instead of $x_C$ and $x_B$ separately, as we can then calculate the dissociation energy of the molecule, $D_0$, using the formula:
 \begin{equation}
-    \frac{D_0}{\hbar} = \frac{\tilde{\nu}^2}{4\tilde{\nu}x_B}
+    \label{eq: dissociationEnergy}
+    \frac{D_0}{hc} = \sum \frac{E_{\nu^{''}}}{hc}
 \end{equation}
+Where $E_{\nu^{''}}$ is the increase in energy of the vibrational level $\nu^{''}$, and the sum is over all vibrational levels.\\
+\indent Since 
+\begin{equation}
+    \label{eq: energyIncrease}
+    E_{\nu^{''}} = \tilde{\nu}_{0\nu^{''}} - \tilde{\nu}_{0(\nu^{''}+1)}
+\end{equation}
+we can estimate all the values of $E_{\nu^{''}}$ and sum them to find $D_0$.\\
 
 \section{Methodology}
 The general steps we took to setup for the procedure were first to ensure the spectrometer was connected to the computer, before turning on the computer and opening the software. We then carefully put the fibre optic cable corresponding to the spectrometer of lower threshold  into the higher clamp, used for observation.
@@ -192,9 +202,9 @@ The first section section of the procedure was the calibration of the spectromet
 \indent 
 \subsection{Emission Spectrum of $N_2$}
 The second part of the experiment was to capture the emission spectrum of $N_2$ using the Flame-T spectrometer. This involved the use of an $N_2$ lamp, which was placed facing the wall, with the fibre optic cable mounted in the front panel of the lamp, due to the UV light emitted by the lamp.\\
-\indent The spectrum is optimised, and captured two spectra, one for observing the large peak behaviour, and one for observing the smaller peaks. 
-\subsection{Absorption Spectrum of $I_2$}
-
+\indent The spectrum is optimised, and captured two spectra, one for observing the large peak behaviour, and one for observing the smaller peaks. The peaks are then fitted with Lorentzian functions, and the wavenumbers of the peaks are calculated.\\
+\indent The wavenumbers are then used to calculate the values of $\tilde{\nu}_B$, $\tilde{\nu}_Bx_B$, $\tilde{\nu}_C$, and $\tilde{\nu}_Cx_C$, and the transition wavenumbers, and their differences for a fixed $\nu^{\prime}$, are put into a DesLandres table.\\
+\indent These differences are fitted for a linear function, and the by calculating the $x$-intercept, we can find the dissociation energy of the molecule.\\
 \section{Results}
 \subsection{Calibration}
 The results of the first part of the procedure, section \ref{sec:calibration}, were threefold. First we observed the effect of changing the collection parameters on the emission spectrum, and noted the value of saturation of the spectrometer. Secondly, after capturing the mercury emission spectrum, we estimated the optical resolution as the average of the full-width half-maximums of the Gaussian fits of our single peaks. Finally, we compared the centres of the Gaussian fits to the literature values of the strong lines of the mercury spectrum.\\
@@ -276,12 +286,51 @@ This then allows to find a value for each peak.\\
 This resolution data gives us two plot, against which we fit linear functions.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/ResolutionvsWavelength.png}
-    \caption{\label{fig:Resolution} The optical resolution of the Flame-T and Flame-S spectrometers, with a linear fit.}
+    \includegraphics[width=\textwidth]{/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/ResolutionvsWavelength.png}
+    \caption{\label{fig:Resolution} The optical resolution of the Flame-T and Flame-S spectrometers, with a linear fit and 95\% confidence intervals.}
 \end{figure}
 This fit gives us a value of $(9.9811\pm0.1395)10^{-4}$ for the slope of the FLAME-T spectrometer fit, and $2.9554\pm0.0436$ for the FLAME-T spectrometer, which are $\frac{1}{R_T}$, $\frac{1}{R_S}$, where $R_T = 1001.894\pm14.007, R_S = 338.359\pm4.993$. This are both well within reasonable proximity of our estimated values above.\\
 \subsection{Emission Spectrum of $N_2$}
+The results of the second part of the procedure, the emission spectrum of $N_2$, beginning first with the fitting and labelling of the peaks of the spectrum, with the use of some literature values \cite{article3}.\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/N2_T_Spectrum_fitted.pdf}
+    \caption{\label{fig:N2Emission} The emission spectrum of $N_2$ with Lorentzian fits on each peak.}
+\end{figure}
+we then used the data to calculate the wavenumbers of the peaks which we then used to calculate the values of $\tilde{\nu}_B = (1.73\pm0.05)\cdot10^{-7} m{-1} $ and $\tilde{\nu}_Bx_B = (1.5\pm0.8)\cdot10^{-9}m^{-1}$, however since the $2-0$ transition (and all $n-0$, $n\geq2$) is too high energy, the values of $\tilde{\nu}_C, \tilde{\nu}_Cx_C$ cannot be calculated in the same fashion. Instead we fill some values we know into Eq. \ref{eq: vibronicTransitionwavenumber}. This gives us values $\tilde{\nu}_C=(2.03\pm0.12)\cdot10^{-7} m^{-1}, \tilde{\nu}_Cx_C=(4\pm3)\cdot10^{-9} m^{-1}$\\
+\indent We then put the transition wavenumbers into a DesLandres table.\\
+\vspace{0.5cm}\\
+\begin{tabular}{p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|}
+    \hline
+    \hline
+    $\nu^{\prime}/\nu^{''}$ & 0 & $\Delta\tilde{\nu}_1$ & 1 & $\Delta\tilde{\nu}_2$ & 2 & $\Delta\tilde{\nu}_3$ & 3 & $\Delta\tilde{\nu}_4$ & 4 & $\Delta\tilde{\nu}_5$ & 5 & $\Delta\tilde{\nu}_6$ & 6\\
+    ~ & $\pm0.002$ & $\pm0.003$ & $\pm0.002$ & $\pm0.003$ & $\pm0.002$ & $\pm0.003$ & $\pm0.002$ & $\pm0.003$ & $\pm0.002$ & $\pm0.003$ & $\pm0.002$ & $\pm0.003$ & $\pm0.002$ \\ 
+    \hline
+    0 & $2.967$ & $0.170$ & $2.797$ & $0.167$ & $2.630$ & $0.165$ & $2.465$ & - & - & - & - & - & -\\
+    \hline
+    1 & $3.167$ & $0.171$ & $2.996$ & $0.167$ & $2.829$ & $0.165$ & $2.664$ & $0.165$ & $2.503$ & $0.159$ & $2.344$&-&-\\
+    \hline
+    2 & - & - & $3.191$ & $0.168$ & $3.023$ & $0.165$ & $2.858$ & $0.162$ & $2.696$ & $0.158$ & $2.538$ & $0.156$ & $2.382$ \\ 
+    etc. \\
+    \hline
+    \hline
+    
+\end{tabular}
+We then graph our $\Delta\tilde{\nu}_n$, the values against the corresponding values of $\nu^{''}$, and fit a linear function to the data.\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/home/dj-lawton/Documents/Junior Sophister/JS Labs/Molecular Spectroscopy/Images/TransitionWavenumbersDiffs.pdf}
+    \caption{\label{fig:DeltaWavenumber} The difference in the wavenumber of successive transitions, equaling the energy increases of rotational levels of $B^3\Pi_g$ orbital (Eq. \ref{eq: energyIncrease}).}
+\end{figure}
+since the $x$-intercept ($x=69$ for $\nu^{\prime}=0$) is the 'maximum' value of $\nu^{''}$, we can find the dissociation energy of the molecule by summing over as in Eq. \ref{eq: dissociationEnergy}, and dividing by $hc$. This gives us a value of $D_0 = (7.264\pm0.899) eV$.\\
+
+While the data for a procedure regarding the absorption spectrum of $I_2$ was collected, it was not analysed in this report due to time constraints.\\
+
 \section{Discussion}
+While much of the topics of interest in this experiment were in the uncompleted section, we can still discuss the results of the completed sections.\\
+\indent The calibration of the spectrometers was successful, with the FLAME-T spectrometer found to have an offset of $0.939\pm0.0623$ nm, and the FLAME-S spectrometer found to have an offset of $4.514\pm0.282$ nm. The chromatic resolving power of the spectrometers was found to be $R_T = 1001.894\pm14.007, R_S = 338.359\pm4.993$. These values could be useful in the event of another experiment, as they are not something that changes much with time.\\
+\indent The emission spectrum of $N_2$ yielded some solid results, in the values of wavenumbers of relevant vibronic transitions, and the dissociation energy, $D_0$ of the molecule. However if the experiment was to be repeated, the use of a spectrometer able to catch lower wavelengths would be useful, as many of the transitions were too high energy to be measured.\\
+
 \newpage
 \section{Appendix}
 
