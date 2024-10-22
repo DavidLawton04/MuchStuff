@@ -1,0 +1,19 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Trench(2020{\natexlab{a}})]{2020Euler}
+William~F. Trench.
+\newblock Euler's {Method}, Jan 7 2020{\natexlab{a}}.
+\newblock URL \url{https://www.cs.trinity.edu/~jmyers/EulerMethod.pdf}.
+\newblock [Online; accessed 2024-10-22].
+
+\bibitem[Trench(2020{\natexlab{b}})]{2020Improved}
+William~F. Trench.
+\newblock The {Improved} {Euler} {Method} and {Related} {Methods}, Jan 7 2020{\natexlab{b}}.
+\newblock [Online; accessed 2024-10-22].
+
+\end{thebibliography}
