@@ -94,15 +94,32 @@ where $k_1, k_2, k_3, k_4$ are given by
 This is the most accurate of the three methods, as the local error is of order $\Delta t^5$ and the global error is of order $\Delta t^4$.
 
 \section{Results}
+Our first result emerges from our use of the Euler method and illustrates its inaccuracy.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Euler_Method_Approximation_0.04.pdf}
+    \caption{\label{fig: Euler method 0.04} The approximation of the ODE in Eq. \ref{eq: ODE}, using the Euler method with $\Delta t = 0.04$. The approximation is clearly poor, as the curve diverges to $+\infty$, when it starts below the critical point, and should diverge to $-\infty$.}
+\end{figure}
+While the initial point $x_0=0.0655$ is below the critical point $x_c=0.065923\dots$, and should diverge to $-\infty$, the Euler method approximation of the solution diverges to $+\infty$ in Fig. \ref{fig: Euler method 0.04}.\\
+\indent Next we observe the behaviour of the higher order methods used. 
 
-
-
-
-
-
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth]{/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.04.pdf}
+    \caption{\label{fig: Higher order methods 0.04} The approximation of the ODE in Eq. \ref{eq: ODE}, using the Improved Euler method and the 4th order Runge-Kutta method with $\Delta t = 0.04$, compared to the simple Euler method. Both of the higher order methods approximate the solution better than the simple Euler method, but the 4th order Runge-Kutta method is the most accurate, as it does begin to diverge downwards.} 
+\end{figure}
+In Fig. \ref{fig: Higher order methods 0.04}, on the small scale, each of the methods seems to follow the direction field well. However, the large scale behaviour, versus expectations, also indicates the accuracy of each method. The 4th order Runge-Kutta method can be seen as the most accurate, as it diverges downwards, as expected, unlike the other two.\\
+\indent It follows to alter the step-size to see how it affects the accuracy. We reduce the step-size to $\Delta t = 0.02$, while keeping $x_0=0.0655$ the same, outputting the following results.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{/home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.02.pdf}
+    \caption{\label{fig: Higher order methods 0.02} }
+\end{figure}
+The improvement in accuracy of the Euler method is clear in Fig. \ref{fig: Higher order methods 0.02}, with a little more downward curvature before divergence, although it still diverges upwards. The Improved Euler approximation illustrates best the improvement in accuracy as it now starts to diverge downward as $t$ gets larger, as expected. The difference in accuracy of the 4th order Runge-Kutta method is less clear, due to the smaller change relative to the other two.\\
+\indent We can conclude from this the benefit of using higher order methods. It is evident that the higher order approximations, especially the 4th order Runge-Kutta, require far fewer steps to achieve an accurate approximation, and are thus less prone to rounding errors in high precision calculations. The reduction in steps also reduces the computational cost of the calculation, making it more efficient.\\
 
 \section{Appendix}
-Code used in this assignment is attached, but can also be found at \url{
+Code used in this assignment is attached, but can also be found at \url{https://github.com/DavidLawton04/MuchStuff/tree/62c15d25ead9639dfba68440ad189b285fffb30a/Junior%20Sophister/Computer%20Simulation/Numerical%20Methods/Assignment%203}
+
 \bibliographystyle{plainnat}
 \bibliography{references}
 \end{document}

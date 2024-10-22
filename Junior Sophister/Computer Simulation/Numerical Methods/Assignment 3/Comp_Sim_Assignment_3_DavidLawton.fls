@@ -257,8 +257,14 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-OUTPUT Comp_Sim_Assignment_3_DavidLawton.out
+INPUT ./Comp_Sim_Assignment_3_DavidLawton.out
+INPUT ./Comp_Sim_Assignment_3_DavidLawton.out
+INPUT Comp_Sim_Assignment_3_DavidLawton.out
+INPUT Comp_Sim_Assignment_3_DavidLawton.out
 OUTPUT Comp_Sim_Assignment_3_DavidLawton.pdf
+INPUT ./Comp_Sim_Assignment_3_DavidLawton.out
+INPUT ./Comp_Sim_Assignment_3_DavidLawton.out
+OUTPUT Comp_Sim_Assignment_3_DavidLawton.out
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -287,7 +293,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-OUTPUT Comp_Sim_Assignment_3_DavidLawton.toc
+INPUT ./Comp_Sim_Assignment_3_DavidLawton.toc
+INPUT ./Comp_Sim_Assignment_3_DavidLawton.toc
+INPUT Comp_Sim_Assignment_3_DavidLawton.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -296,8 +305,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+OUTPUT Comp_Sim_Assignment_3_DavidLawton.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Direction_Field.pdf
 INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Direction_Field.pdf
 INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Direction_Field.pdf
@@ -305,3 +314,37 @@ INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical M
 INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Direction_Field.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Euler_Method_Approximation_0.04.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Euler_Method_Approximation_0.04.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Euler_Method_Approximation_0.04.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Euler_Method_Approximation_0.04.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Euler_Method_Approximation_0.04.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.04.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.04.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.04.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.04.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.04.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.02.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.02.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.02.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.02.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Computer Simulation/Numerical Methods/Assignment 3/Higher_Order_Approximations_0.02.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT ./Comp_Sim_Assignment_3_DavidLawton.bbl
+INPUT ./Comp_Sim_Assignment_3_DavidLawton.bbl
+INPUT Comp_Sim_Assignment_3_DavidLawton.bbl
+INPUT Comp_Sim_Assignment_3_DavidLawton.aux
+INPUT ./Comp_Sim_Assignment_3_DavidLawton.out
+INPUT ./Comp_Sim_Assignment_3_DavidLawton.out
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
