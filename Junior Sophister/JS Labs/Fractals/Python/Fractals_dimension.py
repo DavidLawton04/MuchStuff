@@ -48,36 +48,39 @@ def mass_dimension(data_file):
         y = img.shape[1] - y
         print(x)
 
-    prop_vals = []
+    area_vals = []
+
+    grid = np.meshgrid(np.arange(0, img.shape[0], 1), np.arange(0, img.shape[1], 1))
     # print(np.min([x,y]))
     radii = np.arange(0, np.min([x,y])+1, 1)
     for r in radii:
         sector = img[x-r:x+r+1, y-r:y+r+1]
-        q = np.where(sector == 255)
-        # if r==100:
-        #     # # print(q)
-        #     # plt.figure()
-        #     # plt.title(f'Molarity $= {data_file[0]}$, Voltage $= {data_file[1]}$')
-        #     # plt.plot(q[0],q[1], 'b.')
-        #     # plt.show()
-        proportion = len(q[0])#/((2*r+1)**2)
-        prop_vals.append(proportion)
-        print(r, proportion)
-    
-    prop_vals = np.array(prop_vals)
-    ln_prop_vals, ln_radii = np.log(prop_vals), np.log(radii+0.5)
+        q = np.where(sector >= 100)
 
-    # lin_params, lin_cov = curve_fit(linear_func, np.log(radii), np.log(prop_vals[]))
+        Area = len(q[0])
+        area_vals.append(Area)
+
+    
+    area_vals = np.array(area_vals)
+    
+    ln_area_vals, ln_radii = np.log(area_vals), np.log(radii+0.5)
+    ln_r_bound = np.where((ln_radii >= data_file[2]) & (ln_radii <= data_file[3]))
+    
+    lin_params, lin_cov = curve_fit(linear_func, ln_radii[ln_r_bound], ln_area_vals[ln_r_bound])
+    sigma = np.sqrt(np.diag(lin_cov))
+
 
     fig, axs = plt.subplots(2)
     fig.set_size_inches(10, 30)
     fig.suptitle(f'Molarity $= {data_file[0]}$, Voltage $= {data_file[1]}$')
     
     axs[0].set_title(f'Fractal: Molarity $= {data_file[0]}$, Voltage $= {data_file[1]}$')
-    axs[0].plot(q[0], q[1], 'b.')
-    
-    axs[0].set_title(f'Mass Dimension: Molarity $= {data_file[0]}$, Voltage $= {data_file[1]}$')
-    axs[1].plot(ln_radii, ln_prop_vals, 'b.')
+    axs[0].plot(q[0], q[1], marker='s', color='r', markersize=0.5, linestyle='None')
+
+    axs[1].set_title(f'Mass Dimension: Molarity $= {data_file[0]}$, Voltage $= {data_file[1]}$')
+    axs[1].plot(ln_radii, ln_area_vals, 'b.')
+    axs[1].plot(np.linspace(0, 6, 100), linear_func(np.linspace(0, 6, 100), *lin_params), 'r')
+    axs[1].text(0,10, f'$D = {lin_params[0]:.2f} \pm {sigma[0]:.2f}$')
     axs[1].set_xlabel('$\ln(r)$')
     axs[1].set_ylabel('$\ln(N(r))$')
 
@@ -89,19 +92,19 @@ def mass_dimension(data_file):
 
 
 data_files = [
-['Molarity', 'Voltage','min_rad',   'max_rad', 'centre_x', 'centre_y', 'path'],
-[      0.01,         5,        0,np.exp(3.75), 'centrex' , 'centrey' , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals0.01M5V_bitmap.bmp'],
-[      0.25,         3,        2,           0, 187       , 189       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_25M_3V_bitmap.bmp'],
-[      0.25,         5,       12,           0, 285       , 265       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.25M_5V_bitmap.bmp'],
-[      0.01,         7,       45,           0, 'centrex' , 'centrey' , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_7V_bitmap.bmp'],
-[      0.1 ,         7,       21,           0, 355       , 274       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_7V_bitmap.bmp'],
-[      0.1 ,         5,        0,           0, 295       , 149       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_5V_bitmap.bmp'],
-[      0.01,         3,        0,           0, 222       , 224       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_3V_bitmap.bmp'],
-[      0.1 ,         3,        0,           0, 156       , 159       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_3V_bitmap.bmp'],
-[      0.25,         7,        0,           0, 251       , 229       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal25M7V_light3_bitmap.bmp'],
-[      1   ,         7,        0,           0, 255       , 275       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M7V_Light3_bitmap.bmp'],
-[      1   ,         5,        0,           0, 242       , 180       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M5V_Light0_Invert.bmp'],
-[      1   ,         3,        0,           0, 196       , 170       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M3V_Light3_bitmap.bmp']
+['Molarity', 'Voltage','min_lnrad','max_lnrad', 'centre_x', 'centre_y', 'path'],
+[      0.01,         5,       3.75,     np.inf, 'centrex' , 'centrey' , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals0.01M5V_bitmap.bmp'],
+[      0.25,         3,        2.9,          5, 187       , 189       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_25M_3V_bitmap.bmp'],
+[      0.25,         5,        2.5,        4.7, 285       , 265       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.25M_5V_bitmap.bmp'],
+[      0.01,         7,        3.8,        5.2, 'centrex' , 'centrey' , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_7V_bitmap.bmp'],
+[      0.1 ,         7,       2.65,        4.4, 355       , 274       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_7V_bitmap.bmp'],
+[      0.1 ,         5,        2.8,        4.2, 295       , 149       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_5V_bitmap.bmp'],
+[      0.01,         3,        2.6,        4.6, 222       , 224       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_3V_bitmap.bmp'],
+[      0.1 ,         3,        2.6,        4.5, 156       , 159       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_3V_bitmap.bmp'],
+[      0.25,         7,        3.6,        4.9, 251       , 229       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal25M7V_light3_bitmap.bmp'],
+[      1   ,         7,        2.2,        3.9, 255       , 275       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M7V_Light3_bitmap.bmp'],
+[      1   ,         5,        2.5,          4, 242       , 180       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M5V_Light0_Invert.bmp'],
+[      1   ,         3,        2.7,        3.7, 196       , 170       , '/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M3V_Light3_bitmap.bmp']
 ]        
 
 for data in data_files[1:]:
