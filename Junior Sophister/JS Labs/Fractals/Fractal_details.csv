@@ -1,0 +1,13 @@
+Molarity,Voltage,Dimension(mass),ConfIntLow,ConfIntHigh,R^2,Type,Dimension(box)
+1,7,1.203,1.125,1.281,0.980195,Stringy/Dendritic
+1,5,1.111,1.088,1.133,0.981741,Stringy
+1,3,1.099,1.060,1.138,0.948657,Stringy
+0.25,7,1.696,1.623,1.769,0.988227,Open/Stringy
+0.25,5,1.423,1.390,1.456,0.982026,Open/Dendritic
+0.25,3,1.749,1.599,1.898,0.990963,Open/Dendritic
+0.1,7,1.621,1.550,1.692,0.991646,Open/Stringy
+0.1,5,1.337,1.256,1.419,0.980386,Dendritic/Stringy
+0.1,3,1.595,1.533,1.656,0.990220,Open/Dendritic
+0.01,7,1.815,1.768,1.862,0.997657,Homogenous/Dendritic
+0.01,5,1.748,1.688,1.809,0.994467,Dendritic/Homogeneous
+0.01,3,1.854,1.811,1.909,0.997329,Homogeneous
