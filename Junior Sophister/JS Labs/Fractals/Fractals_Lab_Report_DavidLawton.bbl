@@ -1,6 +1,24 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{LabHandbook}
-Junior sophister laboratory handbook: Fractals, Jul 2023.
+\bibitem[Karperien(1999)]{ImageJ}
+A.~Karperien.
+\newblock Fraclac for imagej, 1999.
+\newblock URL \url{https://imagej.net/ij/plugins/fraclac/FLHelp/BoxCounting.htm}.
+
+\bibitem[Physics(2023)]{LabHandbook}
+TCD Physics.
+\newblock Junior sophister laboratory handbook: Fractals, Jul 2023.
+
+\bibitem[Sawada et~al.(1986)Sawada, Dougherty, and Gollub]{PhysRevLett.56.1260}
+Yasuji Sawada, A.~Dougherty, and J.~P. Gollub.
+\newblock Dendritic and fractal patterns in electrolytic metal deposits.
+\newblock \emph{Phys. Rev. Lett.}, 56:\penalty0 1260--1263, Mar 1986.
+\newblock \doi{10.1103/PhysRevLett.56.1260}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.56.1260}.
 
 \end{thebibliography}

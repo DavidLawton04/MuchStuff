@@ -1,48 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Fractals_Lab_Report_DavidLawton.aux
-The style file: plain.bst
+The style file: plainnat.bst
 Database file #1: references.bib
-Warning--to sort, need author or key in LabHandbook
-You've used 1 entry,
-            2118 wiz_defined-function locations,
-            503 strings with 4142 characters,
-and the built_in function-call counts, 174 in all, are:
-= -- 13
-> -- 1
-< -- 0
-+ -- 1
-- -- 0
-* -- 10
-:= -- 24
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 3
-chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 7
-empty$ -- 24
-format.name$ -- 0
-if$ -- 39
-int.to.chr$ -- 0
+You've used 3 entries,
+            2773 wiz_defined-function locations,
+            617 strings with 5387 characters,
+and the built_in function-call counts, 1164 in all, are:
+= -- 103
+> -- 50
+< -- 2
++ -- 18
+- -- 15
+* -- 85
+:= -- 182
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 14
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 51
+empty$ -- 107
+format.name$ -- 18
+if$ -- 239
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 6
-num.names$ -- 0
-pop$ -- 9
+missing$ -- 1
+newline$ -- 24
+num.names$ -- 12
+pop$ -- 33
 preamble$ -- 1
-purify$ -- 2
+purify$ -- 11
 quote$ -- 0
-skip$ -- 8
+skip$ -- 42
 stack$ -- 0
-substring$ -- 5
-swap$ -- 1
+substring$ -- 37
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 1
-while$ -- 0
-width$ -- 2
-write$ -- 8
-(There was 1 warning)
+type$ -- 33
+warning$ -- 0
+while$ -- 11
+width$ -- 0
+write$ -- 46

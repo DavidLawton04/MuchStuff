@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.22)  24 OCT 2024 18:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.22)  26 OCT 2024 02:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -540,10 +540,22 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip61
 \thm@headsep=\skip62
 \dth@everypar=\toks46
+) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+
+
+Package natbib Warning: The `cite' package should not be used
+(natbib)                with natbib. Use option `sort' instead.
+
+\bibhang=\skip63
+\bibsep=\skip64
+LaTeX Info: Redefining \cite on input line 694.
+LaTeX Info: Redefining \citenum on input line 708.
+\c@NAT@ctr=\count323
 )
-\c@theorem=\count323
-\c@corollary=\count324
-\c@definition=\count325
+\c@theorem=\count324
+\c@corollary=\count325
+\c@definition=\count326
  (./Fractals_Lab_Report_DavidLawton.aux)
 \openout1 = `Fractals_Lab_Report_DavidLawton.aux'.
 
@@ -567,16 +579,16 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count326
+\scratchcounter=\count327
 \scratchdimen=\dimen284
 \scratchbox=\box73
-\nofMPsegments=\count327
-\nofMParguments=\count328
+\nofMPsegments=\count328
+\nofMParguments=\count329
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count329
+\MPscratchCnt=\count330
 \MPscratchDim=\dimen285
-\MPnumerator=\count330
-\makeMPintoPDFobject=\count331
+\MPnumerator=\count331
+\makeMPintoPDFobject=\count332
 \everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -584,7 +596,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count332
+\c@lstlisting=\count333
 Package hyperref Info: Link coloring OFF on input line 38.
  (./Fractals_Lab_Report_DavidLawton.out) (./Fractals_Lab_Report_DavidLawton.out)
 \@outlinefile=\write4
@@ -601,29 +613,50 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 \openout5 = `Fractals_Lab_Report_DavidLawton.toc'.
 
- (./Fractals_Lab_Report_DavidLawton.bbl [1
+ [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) [2] (./Fractals_Lab_Report_DavidLawton.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<radius_cutting_img.png, id=68, 684.5575pt x 664.4825pt>
+File: radius_cutting_img.png Graphic file (type png)
+<use radius_cutting_img.png>
+Package pdftex.def Info: radius_cutting_img.png  used on input line 74.
+(pdftex.def)             Requested size: 234.8775pt x 227.98944pt.
+<Boxcounting.png, id=70, 774.895pt x 778.91pt>
+File: Boxcounting.png Graphic file (type png)
+<use Boxcounting.png>
+Package pdftex.def Info: Boxcounting.png  used on input line 74.
+(pdftex.def)             Requested size: 234.8775pt x 236.0875pt.
+
+Overfull \hbox (24.00002pt too wide) in paragraph at lines 72--77
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--78
+
+ []
+
+[2 <./radius_cutting_img.png> <./Boxcounting.png>] (./Fractals_Lab_Report_DavidLawton.bbl) [3] (./Fractals_Lab_Report_DavidLawton.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `Fractals_Lab_Report_DavidLawton.out' has not changed.
-(rerunfilecheck)             Checksum: AF6263A9427627BF42B5DD54A20D6D1C;745.
+(rerunfilecheck)             Checksum: D0BE310210CF32F65BE3A0192B20504A;755.
  ) 
 Here is how much of TeX's memory you used:
- 23254 strings out of 476139
- 429976 string characters out of 5794454
- 1934975 words of memory out of 5000000
- 44853 multiletter control sequences out of 15000+600000
- 564533 words of font info for 60 fonts, out of 8000000 for 9000
+ 23647 strings out of 476139
+ 435211 string characters out of 5794454
+ 1935975 words of memory out of 5000000
+ 45227 multiletter control sequences out of 15000+600000
+ 566746 words of font info for 70 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,6n,93p,630b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Fractals_Lab_Report_DavidLawton.pdf (2 pages, 86767 bytes).
+ 84i,13n,93p,816b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Fractals_Lab_Report_DavidLawton.pdf (3 pages, 381121 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 
