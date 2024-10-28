@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.22)  26 OCT 2024 02:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.22)  28 OCT 2024 23:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -552,43 +552,49 @@ Package natbib Warning: The `cite' package should not be used
 LaTeX Info: Redefining \cite on input line 694.
 LaTeX Info: Redefining \citenum on input line 708.
 \c@NAT@ctr=\count323
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip65
+\multirow@cntb=\count324
+\multirow@dima=\skip66
+\bigstrutjot=\dimen284
 )
-\c@theorem=\count324
-\c@corollary=\count325
-\c@definition=\count326
+\c@theorem=\count325
+\c@corollary=\count326
+\c@definition=\count327
  (./Fractals_Lab_Report_DavidLawton.aux)
 \openout1 = `Fractals_Lab_Report_DavidLawton.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count327
-\scratchdimen=\dimen284
+\scratchcounter=\count328
+\scratchdimen=\dimen285
 \scratchbox=\box73
-\nofMPsegments=\count328
-\nofMParguments=\count329
+\nofMPsegments=\count329
+\nofMParguments=\count330
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count330
-\MPscratchDim=\dimen285
-\MPnumerator=\count331
-\makeMPintoPDFobject=\count332
+\MPscratchCnt=\count331
+\MPscratchDim=\dimen286
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
 \everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -596,67 +602,93 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count333
-Package hyperref Info: Link coloring OFF on input line 38.
+\c@lstlisting=\count334
+Package hyperref Info: Link coloring OFF on input line 39.
  (./Fractals_Lab_Report_DavidLawton.out) (./Fractals_Lab_Report_DavidLawton.out)
 \@outlinefile=\write4
 \openout4 = `Fractals_Lab_Report_DavidLawton.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./Fractals_Lab_Report_DavidLawton.toc)
 \tf@toc=\write5
 \openout5 = `Fractals_Lab_Report_DavidLawton.toc'.
 
- [1
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<radius_cutting_img.png, id=68, 684.5575pt x 664.4825pt>
+<radius_cutting_img.png, id=78, 684.5575pt x 664.4825pt>
 File: radius_cutting_img.png Graphic file (type png)
 <use radius_cutting_img.png>
-Package pdftex.def Info: radius_cutting_img.png  used on input line 74.
+Package pdftex.def Info: radius_cutting_img.png  used on input line 76.
 (pdftex.def)             Requested size: 234.8775pt x 227.98944pt.
-<Boxcounting.png, id=70, 774.895pt x 778.91pt>
+<Boxcounting.png, id=80, 774.895pt x 778.91pt>
 File: Boxcounting.png Graphic file (type png)
 <use Boxcounting.png>
-Package pdftex.def Info: Boxcounting.png  used on input line 74.
+Package pdftex.def Info: Boxcounting.png  used on input line 76.
 (pdftex.def)             Requested size: 234.8775pt x 236.0875pt.
 
-Overfull \hbox (24.00002pt too wide) in paragraph at lines 72--77
+Overfull \hbox (24.00002pt too wide) in paragraph at lines 74--79
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--78
+Underfull \hbox (badness 10000) in paragraph at lines 70--80
 
  []
 
-[2 <./radius_cutting_img.png> <./Boxcounting.png>] (./Fractals_Lab_Report_DavidLawton.bbl) [3] (./Fractals_Lab_Report_DavidLawton.aux)
+[2 <./radius_cutting_img.png> <./Boxcounting.png>]
+<Stringy_fractal.png, id=101, 313.17pt x 216.81pt>
+File: Stringy_fractal.png Graphic file (type png)
+<use Stringy_fractal.png>
+Package pdftex.def Info: Stringy_fractal.png  used on input line 93.
+(pdftex.def)             Requested size: 187.89914pt x 130.08699pt.
+<Open_fractal'.png, id=102, 262.9825pt x 226.8475pt>
+File: Open_fractal'.png Graphic file (type png)
+<use Open_fractal'.png>
+Package pdftex.def Info: Open_fractal'.png  used on input line 93.
+(pdftex.def)             Requested size: 187.89914pt x 162.08742pt.
+<Dendritic_fractal.png, id=103, 275.0275pt x 216.81pt>
+File: Dendritic_fractal.png Graphic file (type png)
+<use Dendritic_fractal.png>
+Package pdftex.def Info: Dendritic_fractal.png  used on input line 95.
+(pdftex.def)             Requested size: 187.89914pt x 148.13019pt.
+<Homogeneous_fractal.png, id=104, 275.0275pt x 216.81pt>
+File: Homogeneous_fractal.png Graphic file (type png)
+<use Homogeneous_fractal.png>
+Package pdftex.def Info: Homogeneous_fractal.png  used on input line 95.
+(pdftex.def)             Requested size: 187.89914pt x 148.13019pt.
+ [3 <./Stringy_fractal.png> <./Open_fractal'.png> <./Dendritic_fractal.png> <./Homogeneous_fractal.png>] (./Fractals_Lab_Report_DavidLawton.bbl [4]) [5] (./Fractals_Lab_Report_DavidLawton.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `Fractals_Lab_Report_DavidLawton.out' has not changed.
-(rerunfilecheck)             Checksum: D0BE310210CF32F65BE3A0192B20504A;755.
+(rerunfilecheck)             Checksum: 6B9501EA05A14027567FF032EF4766CA;1164.
  ) 
 Here is how much of TeX's memory you used:
- 23647 strings out of 476139
- 435211 string characters out of 5794454
- 1935975 words of memory out of 5000000
- 45227 multiletter control sequences out of 15000+600000
- 566746 words of font info for 70 fonts, out of 8000000 for 9000
+ 23754 strings out of 476139
+ 437321 string characters out of 5794454
+ 1949975 words of memory out of 5000000
+ 45325 multiletter control sequences out of 15000+600000
+ 567053 words of font info for 71 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  84i,13n,93p,816b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Fractals_Lab_Report_DavidLawton.pdf (3 pages, 381121 bytes).
+Output written on Fractals_Lab_Report_DavidLawton.pdf (5 pages, 524903 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 115 words of extra memory for PDF output out of 10000 (max. 10000000)
 

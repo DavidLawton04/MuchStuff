@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex Fractals_Lab_Report_DavidLawton"] 1729902675.7209 "Fractals_Lab_Report_DavidLawton.aux" "Fractals_Lab_Report_DavidLawton.bbl" "Fractals_Lab_Report_DavidLawton" 1729906405.52213 0
+["bibtex Fractals_Lab_Report_DavidLawton"] 1730157961.78627 "Fractals_Lab_Report_DavidLawton.aux" "Fractals_Lab_Report_DavidLawton.bbl" "Fractals_Lab_Report_DavidLawton" 1730157970.22254 0
   "./references.bib" 1729901933.09037 847 202484e14155102e300e063d9ab2832d ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "Fractals_Lab_Report_DavidLawton.aux" 1729906405.31444 2592 445ddd3c719e8bfc9d9f4a713302aac9 "pdflatex"
+  "Fractals_Lab_Report_DavidLawton.aux" 1730157969.11385 3899 67d383bcaeee171ef9be36e1e5e1f9bf "pdflatex"
   (generated)
   "Fractals_Lab_Report_DavidLawton.bbl"
   "Fractals_Lab_Report_DavidLawton.blg"
   (rewritten before read)
-["pdflatex"] 1729906404.01578 "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/Fractals_Lab_Report_DavidLawton.tex" "Fractals_Lab_Report_DavidLawton.pdf" "Fractals_Lab_Report_DavidLawton" 1729906405.5224 0
+["pdflatex"] 1730157961.90235 "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/Fractals_Lab_Report_DavidLawton.tex" "Fractals_Lab_Report_DavidLawton.pdf" "Fractals_Lab_Report_DavidLawton" 1730157970.22289 0
   "/etc/texmf/web2c/texmf.cnf" 1695845280.71272 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/Fractals_Lab_Report_DavidLawton.tex" 1729906403.65647 7849 625f6b06bf128839aff917194a8b8098 ""
+  "/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/Fractals_Lab_Report_DavidLawton.tex" 1730157790.64391 11093 22cfd594a99803d478acee32c8d7a72c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -167,6 +167,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/mathalpha/mathalpha.sty" 1637269094 57446 690f30dbdc513bfa750709d825c1de12 ""
   "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty" 1656621545 62269 5c1837a5bc5db4c0d255eedc225ca44b ""
   "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1616101747 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty" 1615845910 6149 2398eec4faa1ee24ff761581e580ecf1 ""
   "/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty" 1707919699 45458 f1c6cb3edd91174e966cbbaf88993bcf ""
   "/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1601326656 1090 bae35ef70b3168089ef166db3e66f5b2 ""
   "/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1673816307 373 00b204b1d7d095b892ad31a7494b0373 ""
@@ -191,11 +192,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1719069489.09729 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1719069542 6851218 4c73941fa8c1fdb11510831324b33f75 ""
   "Boxcounting.png" 1729900238.32613 88244 e9d313021b2431cc2e1e9470b88b4c24 ""
-  "Fractals_Lab_Report_DavidLawton.aux" 1729906405.31444 2592 445ddd3c719e8bfc9d9f4a713302aac9 "pdflatex"
-  "Fractals_Lab_Report_DavidLawton.bbl" 1729902675.75707 951 c87ee7cea7ea33acc211e69e7017afd4 "bibtex Fractals_Lab_Report_DavidLawton"
-  "Fractals_Lab_Report_DavidLawton.out" 1729906405.31544 755 d0be310210cf32f65be3a0192b20504a "pdflatex"
-  "Fractals_Lab_Report_DavidLawton.tex" 1729906403.65647 7849 625f6b06bf128839aff917194a8b8098 ""
-  "Fractals_Lab_Report_DavidLawton.toc" 1729906405.31644 506 dd9b0cb80c6f2cca7dde4ceb5bb39b21 "pdflatex"
+  "Dendritic_fractal.png" 1729906527.79854 64216 bfc1afafa2681fafe17de14762cdca33 ""
+  "Fractals_Lab_Report_DavidLawton.aux" 1730157969.11385 3899 67d383bcaeee171ef9be36e1e5e1f9bf "pdflatex"
+  "Fractals_Lab_Report_DavidLawton.bbl" 1730157961.85594 951 c87ee7cea7ea33acc211e69e7017afd4 "bibtex Fractals_Lab_Report_DavidLawton"
+  "Fractals_Lab_Report_DavidLawton.out" 1730157969.11485 1164 6b9501ea05a14027567ff032ef4766ca "pdflatex"
+  "Fractals_Lab_Report_DavidLawton.tex" 1730157790.64391 11093 22cfd594a99803d478acee32c8d7a72c ""
+  "Fractals_Lab_Report_DavidLawton.toc" 1730157969.11485 695 1cefdf69bd91d724e855004d6f3a4e84 "pdflatex"
+  "Homogeneous_fractal.png" 1729906516.19272 90934 01c241c3c36258d32b44b7497c9b65fe ""
+  "Open_fractal'.png" 1729906463.58854 37500 0d42f1ad57f86629501f57811938ff6a ""
+  "Stringy_fractal.png" 1729906503.30292 13309 ea925a5b290429fe9d530c315e49a853 ""
   "radius_cutting_img.png" 1729897687.53483 202774 8934524624c0e8ea0df7f993abe8542f ""
   (generated)
   "Fractals_Lab_Report_DavidLawton.aux"

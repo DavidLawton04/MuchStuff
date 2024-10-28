@@ -117,5 +117,6 @@ for data in data_files[1:]:
     # print(image.shape)
     # print('----------------')
     mass_dimension(data)
-    
-    
+
+fractal_dim_info = pd.read_csv('/home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/Python/Fractal_details.csv')
+print('----------------','\n','\begin{tabular}{c|c|c|c|c}','\n','Molarity & Voltage & \multicolumn{2}{c}{Fractal Dimension}\\','\n','\hline','\n',)
