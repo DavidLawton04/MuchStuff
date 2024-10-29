@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.22)  28 OCT 2024 23:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.22)  29 OCT 2024 08:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -627,12 +627,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<radius_cutting_img.png, id=78, 684.5575pt x 664.4825pt>
+<radius_cutting_img.png, id=89, 684.5575pt x 664.4825pt>
 File: radius_cutting_img.png Graphic file (type png)
 <use radius_cutting_img.png>
 Package pdftex.def Info: radius_cutting_img.png  used on input line 76.
 (pdftex.def)             Requested size: 234.8775pt x 227.98944pt.
-<Boxcounting.png, id=80, 774.895pt x 778.91pt>
+<Boxcounting.png, id=91, 774.895pt x 778.91pt>
 File: Boxcounting.png Graphic file (type png)
 <use Boxcounting.png>
 Package pdftex.def Info: Boxcounting.png  used on input line 76.
@@ -648,47 +648,159 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--80
  []
 
 [2 <./radius_cutting_img.png> <./Boxcounting.png>]
-<Stringy_fractal.png, id=101, 313.17pt x 216.81pt>
+<Stringy_fractal.png, id=115, 313.17pt x 216.81pt>
 File: Stringy_fractal.png Graphic file (type png)
 <use Stringy_fractal.png>
-Package pdftex.def Info: Stringy_fractal.png  used on input line 93.
+Package pdftex.def Info: Stringy_fractal.png  used on input line 94.
 (pdftex.def)             Requested size: 187.89914pt x 130.08699pt.
-<Open_fractal'.png, id=102, 262.9825pt x 226.8475pt>
+<Open_fractal'.png, id=116, 262.9825pt x 226.8475pt>
 File: Open_fractal'.png Graphic file (type png)
 <use Open_fractal'.png>
-Package pdftex.def Info: Open_fractal'.png  used on input line 93.
+Package pdftex.def Info: Open_fractal'.png  used on input line 94.
 (pdftex.def)             Requested size: 187.89914pt x 162.08742pt.
-<Dendritic_fractal.png, id=103, 275.0275pt x 216.81pt>
+<Dendritic_fractal.png, id=117, 275.0275pt x 216.81pt>
 File: Dendritic_fractal.png Graphic file (type png)
 <use Dendritic_fractal.png>
-Package pdftex.def Info: Dendritic_fractal.png  used on input line 95.
+Package pdftex.def Info: Dendritic_fractal.png  used on input line 96.
 (pdftex.def)             Requested size: 187.89914pt x 148.13019pt.
-<Homogeneous_fractal.png, id=104, 275.0275pt x 216.81pt>
+<Homogeneous_fractal.png, id=118, 275.0275pt x 216.81pt>
 File: Homogeneous_fractal.png Graphic file (type png)
 <use Homogeneous_fractal.png>
-Package pdftex.def Info: Homogeneous_fractal.png  used on input line 95.
+Package pdftex.def Info: Homogeneous_fractal.png  used on input line 96.
 (pdftex.def)             Requested size: 187.89914pt x 148.13019pt.
- [3 <./Stringy_fractal.png> <./Open_fractal'.png> <./Dendritic_fractal.png> <./Homogeneous_fractal.png>] (./Fractals_Lab_Report_DavidLawton.bbl [4]) [5] (./Fractals_Lab_Report_DavidLawton.aux)
+<fractal images/Fractals_25M_3V.jpg, id=123, 481.8pt x 361.35pt>
+File: fractal images/Fractals_25M_3V.jpg Graphic file (type jpg)
+<use fractal images/Fractals_25M_3V.jpg>
+Package pdftex.def Info: fractal images/Fractals_25M_3V.jpg  used on input line 103.
+(pdftex.def)             Requested size: 234.8775pt x 176.1588pt.
+ [3 <./Stringy_fractal.png> <./Open_fractal'.png> <./Dendritic_fractal.png> <./Homogeneous_fractal.png>]
+<GrieretalFractaltransition.png, id=147, 297.11pt x 246.9225pt>
+File: GrieretalFractaltransition.png Graphic file (type png)
+<use GrieretalFractaltransition.png>
+Package pdftex.def Info: GrieretalFractaltransition.png  used on input line 112.
+(pdftex.def)             Requested size: 234.8775pt x 195.2098pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--114
+
+ []
+
+[4 <./fractal images/Fractals_25M_3V.jpg>] [5 <./GrieretalFractaltransition.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--155
+
+ []
+
+</home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M3V_Light3.jpg, id=181, 481.8pt x 361.35pt>
+File: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M3V_Light3.jpg Graphic file (type jpg)
+<use /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M3V_Light3.jpg>
+Package pdftex.def Info: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M3V_Light3.jpg  used on input line 173.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+</home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M5V_Light0.jpg, id=182, 481.8pt x 361.35pt>
+File: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M5V_Light0.jpg Graphic file (type jpg)
+<use /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M5V_Light0.jpg>
+Package pdftex.def Info: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M5V_Light0.jpg  used on input line 173.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+</home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M7V_Light3.jpg, id=183, 481.8pt x 361.35pt>
+File: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M7V_Light3.jpg Graphic file (type jpg)
+<use /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M7V_Light3.jpg>
+Package pdftex.def Info: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M7V_Light3.jpg  used on input line 173.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+</home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_25M_3V.jpg, id=184, 481.8pt x 361.35pt>
+File: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_25M_3V.jpg Graphic file (type jpg)
+<use /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_25M_3V.jpg>
+Package pdftex.def Info: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_25M_3V.jpg  used on input line 174.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+</home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.25M_5V.jpg, id=185, 481.8pt x 361.35pt>
+File: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.25M_5V.jpg Graphic file (type jpg)
+<use /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.25M_5V.jpg>
+Package pdftex.def Info: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.25M_5V.jpg  used on input line 174.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+</home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal25M7V_light3.jpg, id=186, 481.8pt x 361.35pt>
+File: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal25M7V_light3.jpg Graphic file (type jpg)
+<use /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal25M7V_light3.jpg>
+Package pdftex.def Info: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal25M7V_light3.jpg  used on input line 174.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+</home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_3V.jpg, id=187, 481.8pt x 361.35pt>
+File: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_3V.jpg Graphic file (type jpg)
+<use /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_3V.jpg>
+Package pdftex.def Info: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_3V.jpg  used on input line 175.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+<//home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_5V.jpg, id=188, 481.8pt x 361.35pt>
+File: //home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_5V.jpg Graphic file (type jpg)
+<use //home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_5V.jpg>
+Package pdftex.def Info: //home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_5V.jpg  used on input line 175.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+</home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_7V.jpg, id=189, 481.8pt x 361.35pt>
+File: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_7V.jpg Graphic file (type jpg)
+<use /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_7V.jpg>
+Package pdftex.def Info: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_7V.jpg  used on input line 175.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+</home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_3V.jpg, id=190, 481.8pt x 361.35pt>
+File: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_3V.jpg Graphic file (type jpg)
+<use /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_3V.jpg>
+Package pdftex.def Info: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_3V.jpg  used on input line 176.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+</home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals0.01M5V.jpg, id=191, 481.8pt x 361.35pt>
+File: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals0.01M5V.jpg Graphic file (type jpg)
+<use /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals0.01M5V.jpg>
+Package pdftex.def Info: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals0.01M5V.jpg  used on input line 176.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+</home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_7V.jpg, id=192, 481.8pt x 361.35pt>
+File: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_7V.jpg Graphic file (type jpg)
+<use /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_7V.jpg>
+Package pdftex.def Info: /home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_7V.jpg  used on input line 176.
+(pdftex.def)             Requested size: 117.43875pt x 88.07663pt.
+
+Overfull \hbox (59.7698pt too wide) in paragraph at lines 169--178
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--179
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--194
+
+ []
+
+[7 </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M3V_Light3.jpg> </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M5V_Light0.jpg> </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal1M7V_Light3.jpg> </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_25M_3V.jpg> </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.25M_5V.jpg> </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractal25M7V_light3.jpg> </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_3V.jpg> </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_5V.jpg> </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.1M_7V.jpg> </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_3V.jpg> </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals0.01M5V.jpg> </home/dj-lawton/Documents/Junior Sophister/JS Labs/Fractals/fractal images/Fractals_0.01M_7V.jpg>] (./Fractals_Lab_Report_DavidLawton.bbl)
+<FractalsSketch.png, id=215, 1541.76pt x 776.9025pt>
+File: FractalsSketch.png Graphic file (type png)
+<use FractalsSketch.png>
+Package pdftex.def Info: FractalsSketch.png  used on input line 205.
+(pdftex.def)             Requested size: 234.8775pt x 118.35594pt.
+ [8 <./FractalsSketch.png>] (./Fractals_Lab_Report_DavidLawton.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `Fractals_Lab_Report_DavidLawton.out' has not changed.
-(rerunfilecheck)             Checksum: 6B9501EA05A14027567FF032EF4766CA;1164.
+(rerunfilecheck)             Checksum: 79102C8726FE2900B3861F7344D229F6;1301.
  ) 
 Here is how much of TeX's memory you used:
- 23754 strings out of 476139
- 437321 string characters out of 5794454
- 1949975 words of memory out of 5000000
- 45325 multiletter control sequences out of 15000+600000
- 567053 words of font info for 71 fonts, out of 8000000 for 9000
+ 23898 strings out of 476139
+ 447744 string characters out of 5794454
+ 1956975 words of memory out of 5000000
+ 45455 multiletter control sequences out of 15000+600000
+ 568299 words of font info for 76 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,13n,93p,816b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Fractals_Lab_Report_DavidLawton.pdf (5 pages, 524903 bytes).
+ 84i,13n,93p,1071b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Fractals_Lab_Report_DavidLawton.pdf (8 pages, 1558825 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 306 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 

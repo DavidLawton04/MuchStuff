@@ -1,9 +1,16 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Grier et~al.(1987)Grier, Kessler, and Sander]{PhysRevLett.59.2315}
+David~G. Grier, David~A. Kessler, and L.~M. Sander.
+\newblock Stability of the dense radial morphology in diffusive pattern formation.
+\newblock \emph{Phys. Rev. Lett.}, 59:\penalty0 2315--2318, Nov 1987.
+\newblock \doi{10.1103/PhysRevLett.59.2315}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.59.2315}.
 
 \bibitem[Karperien(1999)]{ImageJ}
 A.~Karperien.
@@ -20,5 +27,11 @@ Yasuji Sawada, A.~Dougherty, and J.~P. Gollub.
 \newblock \emph{Phys. Rev. Lett.}, 56:\penalty0 1260--1263, Mar 1986.
 \newblock \doi{10.1103/PhysRevLett.56.1260}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.56.1260}.
+
+\bibitem[{Witten} and {Sander}(1981)]{1981PhRvL..47.1400W}
+Jr. {Witten}, T.~A. and L.~M. {Sander}.
+\newblock {Diffusion-limited aggregation, a kinetic critical phenomenon}.
+\newblock \emph{Phys. Rev. Lett.}, 47\penalty0 (19):\penalty0 1400--1403, November 1981.
+\newblock \doi{10.1103/PhysRevLett.47.1400}.
 
 \end{thebibliography}
