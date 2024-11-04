@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{xfrac}
+\usepackage{amsmath, amssymb}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{mathalpha}
+\usepackage{tikz}
+\usepackage{cite}
+\usepackage{amsthm}
+\usepackage{natbib}
+\usepackage{multirow}
+
+\setcounter{section}{-1}
+
+\newtheorem{theorem}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{example}{Example}
+\newtheorem*{notation}{Notation}
+
+\title{Numerical Solution of the Time-Independent 1D Schr\"{o}dinger Equation}
+\author{David Lawton\\
+        22337087}
+\date{4th Nov. 2024.}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\addcontentsline{toc}{section}{\numberline{}Abstract}
+\begin{abstract}
+
+\end{abstract}
+
+\section{Background \& Theory}
+In this computational laboratory, we shall be solving the time-independent Schr\"{o}dinger equation for a particle in a one-dimensional potential well. The time-independent Schr\"{o}dinger equation is 
+\begin{equation}
+    -\frac{\hbar^2}{2m}\frac{\mathrm{d}^2\psi(x)}{\mathrm{d}x^2} + V(x)\psi(x) = E\psi(x)
+\end{equation}
+where $\psi(x)$ is the wavefunction of the particle, $V(x)$ the potential the particle is under, $m$ the mass of the particle, $E$ the energy of the particle and $\hbar$ the reduced Planck constant. In this lab, we shall non-dimensionalise this equation, to avoid computation of excessively small numbers. Thus we get the non-dimensional Schr\"{o}dinger equation.This is given by
+\begin{equation}
+    \frac{\mathrm{d}^2\psi(\tilde{x})}{\mathrm{d}\tilde{x}^2} + \gamma^2(\varepsilon-\nu(\tilde{x}))\psi(\tilde{x}) = 0
+\end{equation}
+where our non dimensional constants, variables and functions are $\tilde{x} = x/L$, $\varepsilon = E/V_0$, $\nu(\tilde{x}) = V(\tilde{x})/V_0$ and 
+\begin{equation}
+    \gamma^2 = \frac{2mL^2V_0}{\hbar^2}
+\end{equation}
+\section{Methodology}
+
+\section{Results}
+
+
+\subsection{Analytic Solution of non-dimensional Schr\"{o}dinger Equation}
+Our first task is to solve the non-dimensional Schr\"{o}dinger equation analytically, so that we can later verify our computational results. We must solve for the potential well defined by
+\begin{equation}
+    \nu(\tilde{x}) = 
+        \begin{cases}
+            -1 & \text{ if } 0<\tilde{x}<1\\
+            \infty & \text{ otherwise}
+        \end{cases}
+\end{equation}
+To do this we first write our non-dimensional Schr\"{o}dinger equation
+\begin{equation}
+    \frac{\mathrm{d}^2\psi(\tilde{x})}{\mathrm{d}\tilde{x}^2} + \gamma^2(\varepsilon+1)\psi(\tilde{x}) = 0
+\end{equation}
+since $\varepsilon$ has no $\tilde{x}$ dependence, the solution is simply 
+\begin{equation}
+    \psi(\tilde{x}) = 
+        \begin{cases}
+            Ae^{ik\tilde{x}} + Be^{-ik\tilde{x}} & \text{ if }x\in(0,1)\\
+            0 & \text{ otherwise}
+        \end{cases}
+\end{equation}
+where $k = \gamma\sqrt{\varepsilon+1}$. We let $\psi_M(\tilde{x}) = \psi(\tilde{x})$ for $x\in (0,1)$. Then, since $\psi$ must be smooth, we can say $\psi(0)=\psi(1)=0$. This gives us $A+B=0$, so $A=-B$. Thus we have
+\begin{equation}
+    \psi_M(\tilde{x}) = A(e^{ik\tilde{x}}-e^{-ik\tilde{x}}) = 2iA\sin(k\tilde{x}) = C\sin(k\tilde{x}).
+\end{equation}
+We then use our second boundary condition, at $\tilde{x}=1$, giving us $\sin(kx) = 0$. This gives us $k_n = n\pi$ for $n\in\mathbb{N}$. To find the solutions we then normalise the wavefunction (integrate $|\psi|^2$ and equate to 1), giving us $C=\sqrt{2}$. Thus we have our analytic solutions
+\begin{equation}
+    \psi_n(\tilde{x}) = \sqrt{2}\sin(n\pi\tilde{x})
+\end{equation}
+from our equivalent $k_n$ definition we solve for our energy values $\varepsilon_n$,
+\begin{equation}
+    \varepsilon_n = \frac{n^2\pi^2}{\gamma^2}-1
+\end{equation}
+\end{document}
