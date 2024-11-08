@@ -78,7 +78,7 @@ def analysis_no_plot(Psi_, nrg_, nu_, xtilde_vals_, N_, GammaSquare_):
     return Psi_
 
 def Shooting_method(nrg_, nu_, xtilde_vals_, N_, GammaSquare_):
-        dnrg = 1E-4
+        dnrg = 1E-3
         tolerance = 1E-14
 
         Psi_ = np.zeros(N_)
@@ -93,7 +93,14 @@ def Shooting_method(nrg_, nu_, xtilde_vals_, N_, GammaSquare_):
                 dnrg = -dnrg/2
         return nrg_
 
+
 energy = Shooting_method(nrg, nu, xtilde_vals, N, GammaSquare)
 print(energy)
     
-        
+energy_starting_values = np.linspace(-0.9, 500, 500)
+energy_final_values = np.zeros(500)
+for i in range(len(energy_starting_values)):
+    energy_final_values[i] = Shooting_method(energy_starting_values[i], nu, xtilde_vals, N, GammaSquare)
+
+unique_energy_final_values = np.unique(energy_final_values)
+print(unique_energy_final_values)
