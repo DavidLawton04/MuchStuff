@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{xfrac}
+\usepackage{amsmath, amssymb}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{mathalpha}
+\usepackage{tikz}
+\usepackage{cite}
+\usepackage{amsthm}
+\usepackage{natbib}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+\newtheorem{theorem}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{example}{Example}
+\newtheorem*{notation}{Notation}
+
+\title{Computational Simulation I: Python\\Assignment 3\\Exploring the 2D Ising Model, and the Use of Artificial Intelligence in Computational Physics}
+\author{David Lawton\\22337087}
+\date{16. Dec 2024.}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\section{Introduction \& Theory}
+This experiment studied several physical properties of the 2D Ising model, using Python, as well as assessing the use of generative AI in computational physics.
+\subsection{The 2D Ising Model}
+The Ising Model is a model of a ferromagnetic material, consisting of a lattice of spin-$\sfrac{1}{2}$ particles, which can be in one of two states, s=$\pm 1$. This system is one with constant temperature, volume and number of particles, and is in thermal equilibrium. We thus use the canonical ensemble, and partition function to describe the system. The energy of the system in some state $\alpha_j$ is distributed according to the Boltzmann distribution\cite{doi:https://doi.org/10.1002/9783527618835.ch12}
+\begin{equation}
+    P(\alpha_j) = \frac{e^{-\beta E_j}}{Z}, \quad Z = \sum_{\alpha_j} e^{-\beta E_j}
+\end{equation}
+where $\beta = \frac{1}{kT}$, is the thermodynamic beta, $Z$ is the partition function, and $E_j$ is the energy of the system in state $\alpha_j$, which is defined by
+\begin{equation}
+    E_j = -J\sum_{i,j=1}^{N-1} s_{ij}S_{ij} - B\mu_b\sum_{i,j=1}^{N}s_{ij}, \quad S_{ij} = s_{i+1,j} + s_{i-1,j} + s_{i,j+1} + s_{i,j-1}
+\end{equation}
+for a 2D Ising Model with $N^2$ spins, $J$ is the coupling constant, $B$ is the magnetic field, and $\mu_b$ is the Bohr magneton. We use units here such that $J = 1$, and write $B\mu_b = h$ for an external magnetic field. This also means that thermal temperature $kT$ and energy $E$ are in units of $J$.\\
+We can then define the magnetization $M$, heat capacity $C_v$, and magnetic susceptibility $\chi$ as
+\begin{equation}
+    M = \sum_{i,j=1}^{N}s_{ij}, \quad C_v \approx\frac{(\Delta E)^2}{\beta^2}, \quad \chi\approx\frac{(\Delta M)^2}{\beta}
+\end{equation}
+where $\Delta E$ and $\Delta M$ are the variance of energy and magnetization of the system over many iterations. We can then use the Metropolis-Hastings algorithm to sample the Boltzmann distribution and calculate $\braket{E},\braket{M},\chi,C_v$ for given $h, kT$ values.\\
+\indent The reason for studying the 2D Ising model is that given some ferromagnetic material, with a given structure, we can an Ising model with the same structure to predict the behaviour of the material in varying conditions. By using periodic or finite boundary conditions, we can also study the bulk or surface properties of the material, respectively.\\
+\subsection{Metropolis-Hastings Algorithm}
+The Metropolis-Hastings algorithm is a MCMC method for sampling a probability distribution. The algorithm is used in this experiment by flipping the spin of some particle, meausuring the change in energy of the system, and then either accepting or rejecting the flip based on the Boltzmann distribution\cite{doi:https://doi.org/10.1002/9783527618835.ch12}.
+\begin{equation}
+    \delta E = 2s_{ij}S_{ij} + 2h, \quad P(\delta E) = \mathrm{min}(1, e^{-\beta\delta E})
+\end{equation}
+where $\delta E$ is the change in energy of the system sue to the flip, and $P(\delta E)$ is the probability of accepting the spin flip. $N^2$ flips are performed, either at random or sequentially, across the grid, in what we call a sweep. We then measure the energy and magnetization of the system, as well as these quantities squared. After performing many sweeps, the expectation values of $M$, $E$ and their squares converge to the true values, and we can calculate $C_v$, $\chi$ from these. In this experiment we started off using a square grid of side $N=10$, with periodic boundary conditions.\\
+\subsection{Generative AI}
+
+\section{Methodology}
+
+\section{Results}
+
+\section{Conclusion}
+
+\bibliographystyle{plain}
+\bibliography{assignment_references}
+\end{document}

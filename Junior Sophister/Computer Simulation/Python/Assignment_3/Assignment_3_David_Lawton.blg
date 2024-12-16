@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Assignment_3_David_Lawton.aux
+The style file: plain.bst
+Database file #1: assignment_references.bib
+Warning--to sort, need author, editor, or key in doi:https://doi.org/10.1002/9783527618835.ch12
+Warning--empty author and editor in doi:https://doi.org/10.1002/9783527618835.ch12
+You've used 1 entry,
+            2118 wiz_defined-function locations,
+            504 strings with 4185 characters,
+and the built_in function-call counts, 387 in all, are:
+= -- 36
+> -- 1
+< -- 2
++ -- 1
+- -- 0
+* -- 27
+:= -- 47
+add.period$ -- 2
+call.type$ -- 1
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 24
+empty$ -- 43
+format.name$ -- 0
+if$ -- 95
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 7
+num.names$ -- 0
+pop$ -- 8
+preamble$ -- 1
+purify$ -- 2
+quote$ -- 0
+skip$ -- 18
+stack$ -- 0
+substring$ -- 33
+swap$ -- 11
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2
+warning$ -- 2
+while$ -- 2
+width$ -- 2
+write$ -- 11
+(There were 2 warnings)
