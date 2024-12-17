@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.22)  16 DEC 2024 16:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.22)  17 DEC 2024 00:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -540,18 +540,6 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip61
 \thm@headsep=\skip62
 \dth@everypar=\toks46
-) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-
-
-Package natbib Warning: The `cite' package should not be used
-(natbib)                with natbib. Use option `sort' instead.
-
-\bibhang=\skip63
-\bibsep=\skip64
-LaTeX Info: Redefining \cite on input line 694.
-LaTeX Info: Redefining \citenum on input line 708.
-\c@NAT@ctr=\count323
 ) (/usr/share/texlive/texmf-dist/tex/latex/braket/braket.sty) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks47
@@ -559,42 +547,42 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-\c@theorem=\count324
-\c@corollary=\count325
-\c@definition=\count326
+\c@theorem=\count323
+\c@corollary=\count324
+\c@definition=\count325
  (./Assignment_3_David_Lawton.aux)
 \openout1 = `Assignment_3_David_Lawton.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count327
+\scratchcounter=\count326
 \scratchdimen=\dimen284
 \scratchbox=\box73
-\nofMPsegments=\count328
-\nofMParguments=\count329
+\nofMPsegments=\count327
+\nofMParguments=\count328
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count330
+\MPscratchCnt=\count329
 \MPscratchDim=\dimen285
-\MPnumerator=\count331
-\makeMPintoPDFobject=\count332
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -608,17 +596,17 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count333
-Package hyperref Info: Link coloring OFF on input line 38.
+\c@lstlisting=\count332
+Package hyperref Info: Link coloring OFF on input line 37.
  (./Assignment_3_David_Lawton.out) (./Assignment_3_David_Lawton.out)
 \@outlinefile=\write4
 \openout4 = `Assignment_3_David_Lawton.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./Assignment_3_David_Lawton.toc)
@@ -628,16 +616,68 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 58--61
+Underfull \hbox (badness 10000) in paragraph at lines 60--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
-(./Assignment_3_David_Lawton.bbl) [2] (./Assignment_3_David_Lawton.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) [2]
+Overfull \hbox (30.63182pt too wide) in paragraph at lines 90--95
+[]\T1/cmr/m/n/10 The next task was to, at con-stant tem-per-a-tures, mon-i-tor the change of our sys-tem's ob-serv-ables ($[] \OML/cmm/m/it/10 ; [] ; ^^_; C[]$\T1/cmr/m/n/10 )
+ []
+
+<convergence.pdf, id=78, 722.7pt x 505.89pt>
+File: convergence.pdf Graphic file (type pdf)
+<use convergence.pdf>
+Package pdftex.def Info: convergence.pdf  used on input line 99.
+(pdftex.def)             Requested size: 281.85587pt x 197.2963pt.
+<h_graph_T=1.0.pdf, id=80, 722.7pt x 867.24pt>
+File: h_graph_T=1.0.pdf Graphic file (type pdf)
+<use h_graph_T=1.0.pdf>
+Package pdftex.def Info: h_graph_T=1.0.pdf  used on input line 106.
+(pdftex.def)             Requested size: 234.8775pt x 281.84967pt.
+<h_graph_T=4.0.pdf, id=81, 722.7pt x 867.24pt>
+File: h_graph_T=4.0.pdf Graphic file (type pdf)
+<use h_graph_T=4.0.pdf>
+Package pdftex.def Info: h_graph_T=4.0.pdf  used on input line 106.
+(pdftex.def)             Requested size: 234.8775pt x 281.84967pt.
+
+Overfull \hbox (24.00002pt too wide) in paragraph at lines 105--108
+[]  
+ []
+
+<T_graph_h=0.pdf, id=83, 722.7pt x 867.24pt>
+File: T_graph_h=0.pdf Graphic file (type pdf)
+<use T_graph_h=0.pdf>
+Package pdftex.def Info: T_graph_h=0.pdf  used on input line 115.
+(pdftex.def)             Requested size: 281.85587pt x 338.22224pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
+
+ []
+
+[3] [4 <./convergence.pdf> <./h_graph_T=1.0.pdf> <./h_graph_T=4.0.pdf>] [5 <./T_graph_h=0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 123--126
+
+ []
+
+[6] (./Assignment_3_David_Lawton.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -648,21 +688,21 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occurred.
 
 Package rerunfilecheck Info: File `Assignment_3_David_Lawton.out' has not changed.
-(rerunfilecheck)             Checksum: D2FF22F3CE24019B44674C58BA71A18A;912.
+(rerunfilecheck)             Checksum: C25C848AA645A00B87C812BC3418D68F;945.
  ) 
 Here is how much of TeX's memory you used:
- 23940 strings out of 476139
- 438571 string characters out of 5794454
- 1937975 words of memory out of 5000000
- 45511 multiletter control sequences out of 15000+600000
- 575893 words of font info for 90 fonts, out of 8000000 for 9000
+ 24107 strings out of 476139
+ 439342 string characters out of 5794454
+ 1950975 words of memory out of 5000000
+ 45666 multiletter control sequences out of 15000+600000
+ 576228 words of font info for 91 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,12n,93p,719b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Assignment_3_David_Lawton.pdf (2 pages, 148472 bytes).
+ 84i,13n,93p,818b,2130s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Assignment_3_David_Lawton.pdf (6 pages, 219174 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 608 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

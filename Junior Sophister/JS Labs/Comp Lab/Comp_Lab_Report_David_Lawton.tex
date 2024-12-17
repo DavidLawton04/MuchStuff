@@ -15,7 +15,7 @@
 \usepackage{amsthm}
 \usepackage{natbib}
 \usepackage{multirow}
-
+\usepackage[T1]{fontenc}
 \setcounter{section}{-1}
 
 \newtheorem{theorem}{Proposition}[section]
@@ -45,18 +45,30 @@
 
 \end{abstract}
 
+\section{Keywords \& Preliminaries}
+\begin{list}{Keywords}{0.5cm}
+    \item Schr\"{o}dinger Equation
+    \item Eigenvalues
+\end{list}
+
+
 \section{Background \& Theory}
 In this computational laboratory, we shall be solving the time-independent Schr\"{o}dinger equation for a particle in a one-dimensional potential well. The time-independent Schr\"{o}dinger equation is 
 \begin{equation}
     -\frac{\hbar^2}{2m}\frac{\mathrm{d}^2\psi(x)}{\mathrm{d}x^2} + V(x)\psi(x) = E\psi(x)
 \end{equation}
-where $\psi(x)$ is the wavefunction of the particle, $V(x)$ the potential the particle is under, $m$ the mass of the particle, $E$ the energy of the particle and $\hbar$ the reduced Planck constant. In this lab, we shall non-dimensionalise this equation, to avoid computation of excessively small numbers. Thus we get the non-dimensional Schr\"{o}dinger equation.This is given by
+where $\psi(x)$ is the wavefunction of the particle, $V(x)$ the potential the particle is under, $m$ the mass of the particle, $E$ the energy of the particle and $\hbar$ the reduced Planck constant. In this lab, we shall remove the dimensions from this equation, to avoid computation of excessively small numbers. Thus we get the non-dimensional Schr\"{o}dinger equation.This is given by
 \begin{equation}
     \frac{\mathrm{d}^2\psi(\tilde{x})}{\mathrm{d}\tilde{x}^2} + \gamma^2(\varepsilon-\nu(\tilde{x}))\psi(\tilde{x}) = 0
 \end{equation}
 where our non dimensional constants, variables and functions are $\tilde{x} = x/L$, $\varepsilon = E/V_0$, $\nu(\tilde{x}) = V(\tilde{x})/V_0$ and 
 \begin{equation}
     \gamma^2 = \frac{2mL^2V_0}{\hbar^2}
+\end{equation}
+\subsection{Discretization of Wavefunction and its Derivatives}
+To find a numerical solution for this equation, we first discretize our continuous coordinate $\tilde{x}$ and wavefunction $\psi(\tilde{x})$ into $N$ points. Thus each point is defined by $\tilde{x}_n = \frac{n}{N}$, $n = 0, 1, ..., N$. To discretize our wavefunction, we Taylor expand $\psi(\tilde{x}\pm l), l=1/(N-1)$ about $\tilde{x}$ up to fourth order, and adding the two expansions giving us
+\begin{equation}
+    \psi(\tilde{x}+l) + \psi(\tilde{x}-l) = 2\psi(\tilde{x}) + l^2\psi^{\prime\prime}()\tilde{x}) + \frac{l^4\psi^{(4)}(\tilde{x})}{12} + O(l^6)
 \end{equation}
 \section{Methodology}
 
