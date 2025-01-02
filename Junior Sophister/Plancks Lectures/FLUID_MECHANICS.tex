@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{xfrac}
+\usepackage{amsmath, amssymb}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{mathalpha}
+\usepackage{tikz}
+\usepackage{cite}
+\usepackage{amsthm}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+\newtheorem{theorem}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{example}{Example}
+\newtheorem*{notation}{Notation}
+
+\title{PLANCKS Lecture I: Hydrodynamics/Fluid Mechanics\\ Based on lectures given by Dr. Chaolun Wu}
+\author{David Lawton}
+\date{19.12.2024}
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{Introduction}
+Fluid Mechanics, or Hydrodynamics, can be defined as a \textbf{low-energy effective description of a many-body dynamical system}. This system could be governed by either classical or quantum mechanics.\\
+From first principles, we have conservation laws for Noether charges. We have two equations of motion:
+\begin{equation}
+    \partial_\mu J^\mu = 0 \quad \partial_\mu T^{\mu\nu} = 0 \quad(Rel/NR)
+\end{equation}
+where $J^\nu$ is the charge current, and $T^{\mu\nu}$ is the energy-stress tensor.\\
+\indent The system itself has 4 variables: $u^\mu(x)$ or $\vec{v}(\vec{x},t), \epsilon(\vec{x}, t), P(\vec{x},t), \rho(\vec{x}, t)$. These correspond to four-velocity or velocity, energy density, pressure and mass density respectively.\\
+\indent We aim to find `\textbf{constituent relations}', which are $J^\nu,T^{\mu\nu}$ as functions of the system variables $u^\mu, P, \dots$. The way in which we find these is why we call this an \textbf{effective} description. Since any terms allowed by the symmetries of the system will exist, we know that certain terms are contained in each of the relations, e.g.
+\begin{equation}
+J^\nu \sim u^\mu,\quad T^{\mu\nu} \sim u^\mu u^\nu, g^{\mu\nu}
+\end{equation}
+index notation implies the relations are manifestly covariant.\\
+\indent Since our description is \textbf{low-energy}, we organise our constituent relations using a derivative expansion as a Taylor series, where we can charecterise our spacial/temporal variation/fluctuation by
+\begin{equation}
+    \vec{p}\sim\vec{\partial},\quad E \sim \partial_t
+\end{equation}
+and our charecteristic scales of length, time are the mean free path $l_{\mathrm{mfp}}$ and relaxation time $T_{\mathrm{rel}}$ respectively. In a \textbf{low-energy} description, we can say $l_{\mathrm{mfp}}|\vec{\partial}|, T_{\mathrm{rel}} \ll 1$
+
+
+
+
+
+\end{document}
