@@ -1,0 +1,98 @@
+PWD /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV and Cover Letter DavidLawton.tex
+OUTPUT CV and Cover Letter DavidLawton.log
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT ./CV and Cover Letter DavidLawton.aux
+INPUT ./CV and Cover Letter DavidLawton.aux
+INPUT CV and Cover Letter DavidLawton.aux
+OUTPUT CV and Cover Letter DavidLawton.aux
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+OUTPUT CV and Cover Letter DavidLawton.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/Cover Laetter.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.pdf
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT CV and Cover Letter DavidLawton.aux
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb

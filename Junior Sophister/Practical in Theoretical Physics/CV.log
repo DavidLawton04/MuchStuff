@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.22)  20 JAN 2025 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.22)  20 JAN 2025 22:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/dj-lawton/Documents/Junior Sophister/Internship Stuff/RISE Germany/CV_David_Lawton.tex"
-(/home/dj-lawton/Documents/Junior Sophister/Internship Stuff/RISE Germany/CV_David_Lawton.tex
+**"/home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.tex"
+(/home/dj-lawton/Documents/Junior Sophister/Practical in Theoretical Physics/CV.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -536,8 +536,8 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@orf=\skip68
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (./CV_David_Lawton.aux)
-\openout1 = `CV_David_Lawton.aux'.
+) (./CV.aux)
+\openout1 = `CV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
@@ -584,9 +584,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@lstlisting=\count331
 Package hyperref Info: Link coloring OFF on input line 22.
- (./CV_David_Lawton.out) (./CV_David_Lawton.out)
+ (./CV.out) (./CV.out)
 \@outlinefile=\write4
-\openout4 = `CV_David_Lawton.out'.
+\openout4 = `CV.out'.
 
 
 *geometry* driver: auto-detecting
@@ -597,15 +597,15 @@ Package hyperref Info: Link coloring OFF on input line 22.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(42.67912pt, 512.1496pt, 42.67915pt)
-* v-part:(T,H,B)=(14.22636pt, 731.23582pt, 99.58466pt)
+* h-part:(L,W,R)=(35.56595pt, 526.37598pt, 35.56595pt)
+* v-part:(T,H,B)=(45.52438pt, 731.23582pt, 68.28664pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=512.1496pt
+* \textwidth=526.37598pt
 * \textheight=731.23582pt
-* \oddsidemargin=-29.59087pt
-* \evensidemargin=-29.59087pt
-* \topmargin=-58.04362pt
+* \oddsidemargin=-36.70404pt
+* \evensidemargin=-36.70404pt
+* \topmargin=-26.7456pt
 * \headheight=0.0pt
 * \headsep=0.0pt
 * \topskip=10.0pt
@@ -628,32 +628,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--32
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 46.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 38.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./CV_David_Lawton.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./CV.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `CV_David_Lawton.out' has not changed.
+Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23068 strings out of 476139
- 426994 string characters out of 5794454
+ 23066 strings out of 476139
+ 426695 string characters out of 5794454
  1935975 words of memory out of 5000000
- 44694 multiletter control sequences out of 15000+600000
- 567105 words of font info for 58 fonts, out of 8000000 for 9000
+ 44691 multiletter control sequences out of 15000+600000
+ 567546 words of font info for 58 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,6n,93p,501b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on CV_David_Lawton.pdf (1 page, 56746 bytes).
+ 84i,6n,93p,566b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/dj-lawton/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on CV.pdf (1 page, 60637 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
